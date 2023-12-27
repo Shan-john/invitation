@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309684858289",
+    "project_id": "wedding-invitation-card-sj",
+    "storage_bucket": "wedding-invitation-card-sj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309684858289:android:00aed80d763e646583e190",
+        "android_client_info": {
+          "package_name": "com.Sj.invitation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApQqwVzfusUnuBW_3LSeREvzeiPO7K8Rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
