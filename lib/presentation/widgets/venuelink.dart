@@ -14,7 +14,7 @@ class VenueLink extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: ElevatedButton(
         onPressed: () =>
-            launchweb(url: url,), // import 'package:url_launcher/url_launcher.dart';
+            launchweb(url: url,), 
         child: Text(
           label,
           style: TextStyle(color: Colors.black),
