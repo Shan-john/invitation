@@ -1,5 +1,7 @@
 import 'dart:math';
 import 'dart:typed_data';
+import 'package:gap/gap.dart';
+import 'package:invitation/presentation/Screen/pages/all_image_veiw_screen.dart';
 import 'package:invitation/service/firebasehelper.dart';
 
 import 'package:flutter/material.dart';
@@ -22,7 +24,8 @@ class _mySelectionmenu extends State<Selectionmenu> {
 
     if (item != null) {
       setState(() {
-        selectedfile = "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
+        selectedfile =
+            "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
         selectedImageInByte = item;
       });
 
@@ -41,34 +44,58 @@ class _mySelectionmenu extends State<Selectionmenu> {
         width: 380,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InkWell(
-              onTap: () {
-                captureImageFromGallery();
-              },
-              child: const Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(
-                      Icons.camera,
-                      size: 40,
-                      color: Color.fromARGB(255, 222, 225, 255),
-                    ),
-                    Icon(
-                      Icons.photo_library_sharp,
-                      size: 40,
-                      color: Color.fromARGB(255, 222, 225, 255),
-                    ),
-                    Text(
-                      "Share memories with us.",
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Color.fromARGB(255, 255, 255, 255),
-                      ),
-                    ),
-                  ],
-                ),
+          TextButtonforcameraGallery(icon: Icons.camera, label: "Pick / Take Image", ontap: (){
+            captureImageFromGallery();
+          }),
+
+            /// nectbgdiufgdufgpsduuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+            TextButtonforcameraGallery(
+                icon: Icons.photo,
+                label: "Gallery",
+                ontap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (cxt) => const Gallery()));
+                },),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class TextButtonforcameraGallery extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final Function() ontap;
+  TextButtonforcameraGallery({
+    super.key,
+    required this.icon,
+    required this.label,
+    required this.ontap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: ontap,
+      child: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Gap(20),
+            Icon(
+              icon,
+              size: 40,
+              color: Color.fromARGB(255, 222, 225, 255),
+            ),
+            Gap(20),
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: 24,
+                color: Color.fromARGB(255, 255, 255, 255),
               ),
             ),
           ],
