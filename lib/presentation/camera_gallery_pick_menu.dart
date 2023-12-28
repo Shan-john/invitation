@@ -60,7 +60,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
                       color: Color.fromARGB(255, 222, 225, 255),
                     ),
                     Text(
-                      "Share Memory With US",
+                      "Share Memorys With US",
                       style: TextStyle(
                         fontSize: 24,
                         color: Color.fromARGB(255, 255, 255, 255),
