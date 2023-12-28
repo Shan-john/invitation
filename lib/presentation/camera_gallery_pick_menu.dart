@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'dart:typed_data';
 import 'package:invitation/service/firebasehelper.dart';
 
@@ -21,7 +22,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
 
     if (item != null) {
       setState(() {
-        selectedfile = "${DateTime.now().millisecondsSinceEpoch}.jpeg";
+        selectedfile = "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
         selectedImageInByte = item;
       });
 
@@ -37,7 +38,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
       backgroundColor: const Color.fromARGB(160, 41, 41, 41),
       child: SizedBox(
         height: 120,
-        //width: 20,
+        width: 380,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -47,7 +48,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
               },
               child: const Center(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                       Icons.camera,
@@ -56,11 +57,11 @@ class _mySelectionmenu extends State<Selectionmenu> {
                     ),
                     Icon(
                       Icons.photo_library_sharp,
-                      size: 35,
+                      size: 40,
                       color: Color.fromARGB(255, 222, 225, 255),
                     ),
                     Text(
-                      "Share Memorys With US",
+                      "Share memories with us.",
                       style: TextStyle(
                         fontSize: 24,
                         color: Color.fromARGB(255, 255, 255, 255),

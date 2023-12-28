@@ -10,24 +10,21 @@ class Section1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Image.network(
-            "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",
-            // height: 100, // Set your desired height
-            // width: 100, // Set your desired width
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CircleContainer("Date", "10"),
-              CircleContainer("Month", "Oct"),
-              CircleContainer("Year", "2023"),
-            ],
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        Image.network(
+          "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",
+           
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleContainer("Date", "10"),
+            CircleContainer("Month", "july"),
+            CircleContainer("Year", "2024"),
+          ],
+        ),
+      ],
     );
   }
 }

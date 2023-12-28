@@ -13,20 +13,26 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 0, 0, 0),
      
-      floatingActionButton: FloatingActionButton(
-       
-        onPressed: () {
-          showDialog(
-              context: context,
-              builder: (BuildContext context) {
-                return Selectionmenu();
-              });
-        },
-        tooltip: 'Take Photos',
-        child:const Icon(
-          Icons.add_photo_alternate_outlined,
-          size: 34,
-          color: const Color.fromARGB(255, 99, 99, 99),
+      floatingActionButton: SizedBox(
+        height: 65,
+        width: 65,
+        child: FloatingActionButton(
+          
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Selectionmenu();
+                });
+          },
+          
+          tooltip: 'Take Photos',
+        
+          child:const Icon(
+            Icons.add_photo_alternate_outlined,
+            size: 36,
+            color: const Color.fromARGB(255, 99, 99, 99),
+          ),
         ),
       ),
       body: const SingleChildScrollView(

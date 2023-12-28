@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:invitation/presentation/widgets/socialLink.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:invitation/presentation/widgets/venuelink.dart';
 
 class Footer extends StatelessWidget {
   @override
@@ -18,7 +18,7 @@ class Footer extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () => launch("https://github.com/Shan-john"),
+            onPressed: () => launchweb(url: "https://github.com/Shan-john"),
             child: Text(
               "Shan John",
               style: TextStyle(
@@ -29,8 +29,7 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SocialLink(
-                  "Instagram", "https://www.instagram.com/s_h_a_n_j_o_h_n"),
+              SocialLink("Instagram", "https://www.instagram.com/s_h_a_n_j_o_h_n"),
               SocialLink("LinkedIn", "https://www.linkedin.com/in/shan-john"),
               SocialLink("GitHub", "https://github.com/Shan-john"),
             ],

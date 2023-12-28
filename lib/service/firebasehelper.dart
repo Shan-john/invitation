@@ -15,7 +15,7 @@ class firebasehelper {
 
       firabase_storage.Reference ref = firabase_storage.FirebaseStorage.instance
           .ref()
-          .child('product')
+          .child('images')
           .child('/' + selectedfile);
 
       final metadata =
@@ -23,11 +23,11 @@ class firebasehelper {
 
       //uploadTask = ref.putFile(File(file.path));
       uploadTask = ref.putData(selectedImageInByte, metadata);
-      print("succes");
+      
       await uploadTask.whenComplete(() => null);
       imageUrl = await ref.getDownloadURL();
     } catch (e) {
-      print(e);
+    
     }
     return imageUrl;
   }

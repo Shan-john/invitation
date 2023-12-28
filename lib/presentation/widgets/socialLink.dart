@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:invitation/presentation/widgets/venuelink.dart';
 
 class SocialLink extends StatelessWidget {
   final String label;
@@ -13,7 +13,7 @@ class SocialLink extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       child: TextButton(
-        onPressed: () => launch(url),
+        onPressed: () => launchweb(url:url),
         child: Text(label),
       ),
     );
