@@ -1,10 +1,9 @@
 import 'dart:io';
 import 'dart:typed_data';
 
-// import 'dart:html' as html;
-// import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart' as firabase_storage;
 import 'package:image_picker_web/image_picker_web.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -367,45 +366,69 @@ class Selectionmenu extends StatefulWidget {
 
 class _mySelectionmenu extends State<Selectionmenu> {
   // Add the function to upload to Firebase or other actions
+  String selectedfile = "";
+  XFile? file;
+  Uint8List? selectedImageInByte;
+  List<Uint8List> pickedImagesInBytes = [];
+  int imageCounts = 0;
+  List<String> imageUrls = [];
 
-  File? _image;
-  Uint8List webimage = Uint8List(8);
-  Future<void> _pickimage() async {
-    if (kIsWeb) {
-      final ImagePicker _picker = ImagePicker();
-      XFile? image = await _picker.pickImage(source: ImageSource.gallery);
-      if (image != null) {
-        var selected = File(image.path);
+  _selectFile(bool imageFrom) async {
+    FilePickerResult? fileResult =
+        await FilePicker.platform.pickFiles(allowMultiple: true);
+
+    if (fileResult != null) {
+      selectedfile = fileResult.files.first.name;
+      fileResult.files.forEach((element) {
         setState(() {
-          _image = selected;
+          pickedImagesInBytes.add(element.bytes!);
+          selectedImageInByte = fileResult.files.first.bytes;
+          imageCounts += 1;
+         
         });
-        // uploadImageAndSaveUrl(_image);
-        print(_image);
-      
-      } else {
-        print("no imaf has picjed");
-      }
+         _uploadFile();;
+      });
     }
-    //else if (kIsWeb) {
-    //   final ImagePicker _picker = ImagePicker();
-    //   XFile? image = await _picker.pickImage(source: ImageSource.gallery);
-    //   if (image != null) {
-    //     var f = await image.readAsBytes();
-    //     setState(() {
-    //       webimage = f;
-    //       _image = File("a");
-    //     });
-    //   } else {
-    //     print("no imag ein spicked");
-    //   }
-    // }
-    else {
-      print("something went wrong ");
-    }
+
+    print(selectedfile);
   }
 
-  
- 
+  Future<String> _uploadFile() async {
+    String imageUrl = '';
+    try {
+      firabase_storage.UploadTask uploadTask;
+
+      firabase_storage.Reference ref = firabase_storage.FirebaseStorage.instance
+          .ref()
+          .child('product')
+          .child('/' + selectedfile);
+
+      final metadata =
+          firabase_storage.SettableMetadata(contentType: 'image/jpeg');
+
+      //uploadTask = ref.putFile(File(file.path));
+      uploadTask = ref.putData(selectedImageInByte!, metadata);
+      print("succes");
+      await uploadTask.whenComplete(() => null);
+      imageUrl = await ref.getDownloadURL();
+    } catch (e) {
+      print(e);
+    }
+    return imageUrl;
+  }
+  //else if (kIsWeb) {
+  //   final ImagePicker _picker = ImagePicker();
+  //   XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+  //   if (image != null) {
+  //     var f = await image.readAsBytes();
+  //     setState(() {
+  //       webimage = f;
+  //       _image = File("a");
+  //     });
+  //   } else {
+  //     print("no imag ein spicked");
+  //   }
+  // }
 
   // Future<void> pickImageFromGallery() async {
   //   FilePickerResult? result = await FilePicker.platform.pickFiles(
@@ -429,21 +452,23 @@ class _mySelectionmenu extends State<Selectionmenu> {
   //   }
   // }
 
-  // Future<void> captureImageFromCamera() async {
-  //   var pickedFile = await ImagePickerWeb.getImageAsFile();
+  Future<void> captureImageFromCamera() async {
+    var item = await ImagePickerWeb.getImageAsBytes();
 
-  //   if (pickedFile != null) {
-  //     // Handle the captured image data as needed
-  //     // uploadImageToFirebase(pickedFile!, 'captured_image.jpg');ppi
-  //     setState(() {
-  //       // _image = pickedFile ?;
-  //     });
+    if (item != null) {
+      // Handle the captured image data as needed
+      // uploadImageToFirebase(pickedFile!, 'captured_image.jpg');ppi
 
-  //     uploadImageAndSaveUrl(_image);
-  //   } else {
-  //     // User canceled the camera capture
-  //   }
-  // }
+      setState(() {
+        selectedfile = "${DateTime.now().millisecondsSinceEpoch}.jpeg";
+        selectedImageInByte = item;
+      });
+
+      _uploadFile();
+    } else {
+      // User canceled the camera capture
+    }
+  }
   // final picker = ImagePicker();
 
   // // Future<void> _pickImageFromCamera() async {
@@ -508,7 +533,9 @@ class _mySelectionmenu extends State<Selectionmenu> {
                       size: 40,
                       color: Color.fromARGB(255, 222, 225, 255),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      captureImageFromCamera();
+                    },
                     label: Text(
                       "Camera",
                       style: TextStyle(
@@ -529,7 +556,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
                   ),
                   onPressed: () {
                     print("clicked");
-                    _pickimage();
+                    _selectFile(true);
                   },
                   label: Text(
                     "Gallery",
