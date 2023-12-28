@@ -13,8 +13,8 @@ class EventTile extends StatelessWidget {
       children: [
         Image.network(
           imageUrl,
-          height: 150,
-          width: 150,
+          height: 180,
+          width: 160,
         ),
         Text(
           title,
