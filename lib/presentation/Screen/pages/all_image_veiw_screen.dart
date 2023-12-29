@@ -13,7 +13,7 @@ class Gallery extends StatefulWidget {
 class _GalleryState extends State<Gallery> {
   List<String> imageurllist = [];
   bool isloading = true;
-   bool hasData = true;
+  bool hasNotData = true;
   @override
   void initState() {
     fetchdata();
@@ -23,20 +23,17 @@ class _GalleryState extends State<Gallery> {
 
   void fetchdata() async {
     try {
-       imageurllist = await firebasehelper.instance.getAllImages();
-    imageurllist.forEach((element) {
-      print(element);
-    });
-    setState(() {
-      isloading = false;
-      hasData = false;
-    });
+      imageurllist = await firebasehelper.instance.getAllImages();
+      imageurllist.reversed.toList();
+      setState(() {
+        isloading = false;
+        hasNotData = false;
+      });
     } catch (e) {
       setState(() {
-      isloading = false;
-    });
+        isloading = false;
+      });
     }
-   
   }
 
   @override
@@ -48,38 +45,42 @@ class _GalleryState extends State<Gallery> {
           foregroundColor: Colors.white,
         ),
         backgroundColor: Colors.black,
-        body: isloading != true && hasData !=true
+        body: isloading != true && hasNotData != true
             ? ListView(
                 children: [
                   gridpro(hsize: size.height, imagelist: imageurllist)
                 ],
               )
-            : isloading == true ? Center(
-                child: Container(
-                  color: Colors.transparent,
-                  alignment: Alignment.center,
-                  height: 50,
-                  width: 50,
-                  child: const CircularProgressIndicator(
-                    color: Color.fromARGB(
-                      255,
-                      233,
-                      205,
-                      79,
+            : isloading == true
+                ? Center(
+                    child: Container(
+                      color: Colors.transparent,
+                      alignment: Alignment.center,
+                      height: 50,
+                      width: 50,
+                      child: const CircularProgressIndicator(
+                        color: Color.fromARGB(
+                          255,
+                          233,
+                          205,
+                          79,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              ):Center(child: Container(
-                height: 20,
-                child: Text(
-                "no image found",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Color.fromARGB(255, 221, 6, 6),
-                ),
-                            ),
-              ),)
-              );
+                  ):
+                hasNotData == true ? Center(
+                    child: Container(
+                      height: 20,
+                      child: Text(
+                        "no image found",
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Color.fromARGB(255, 221, 6, 6),
+                        ),
+                      ),
+                    ),
+                  ):null,
+                  );
   }
 }
 
@@ -133,7 +134,6 @@ Widget bestproductcard(
             return Dialog(
               child: Image.network(imageurl),
             );
-          
           });
     },
     child: Padding(
