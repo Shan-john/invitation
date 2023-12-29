@@ -11,7 +11,8 @@ class Gallery extends StatefulWidget {
 }
 
 class _GalleryState extends State<Gallery> {
-  List<String> imageurllist = [];
+  List<String> Imagedata = [];
+  List<String> reversediamgeData = [];
   bool isloading = true;
   bool hasNotData = true;
   @override
@@ -23,8 +24,8 @@ class _GalleryState extends State<Gallery> {
 
   void fetchdata() async {
     try {
-      imageurllist = await firebasehelper.instance.getAllImages();
-      imageurllist.reversed.toList();
+      Imagedata = await firebasehelper.instance.getAllImages();
+      reversediamgeData = Imagedata.reversed.toList();
       setState(() {
         isloading = false;
         hasNotData = false;
@@ -40,47 +41,49 @@ class _GalleryState extends State<Gallery> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          foregroundColor: Colors.white,
-        ),
+      appBar: AppBar(
         backgroundColor: Colors.black,
-        body: isloading != true && hasNotData != true
-            ? ListView(
-                children: [
-                  gridpro(hsize: size.height, imagelist: imageurllist)
-                ],
-              )
-            : isloading == true
-                ? Center(
-                    child: Container(
-                      color: Colors.transparent,
-                      alignment: Alignment.center,
-                      height: 50,
-                      width: 50,
-                      child: const CircularProgressIndicator(
-                        color: Color.fromARGB(
-                          255,
-                          233,
-                          205,
-                          79,
-                        ),
+        foregroundColor: Colors.white,
+      ),
+      backgroundColor: Colors.black,
+      body: isloading != true && hasNotData != true
+          ? ListView(
+              children: [
+                gridpro(hsize: size.height, imagelist: reversediamgeData)
+              ],
+            )
+          : isloading == true
+              ? Center(
+                  child: Container(
+                    color: Colors.transparent,
+                    alignment: Alignment.center,
+                    height: 50,
+                    width: 50,
+                    child: const CircularProgressIndicator(
+                      color: Color.fromARGB(
+                        255,
+                        233,
+                        205,
+                        79,
                       ),
                     ),
-                  ):
-                hasNotData == true ? Center(
-                    child: Container(
-                      height: 20,
-                      child: Text(
-                        "no image found",
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Color.fromARGB(255, 221, 6, 6),
+                  ),
+                )
+              : hasNotData == true
+                  ? Center(
+                      child: Container(
+                        height: 20,
+                        child: Text(
+                          "no image found",
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Color.fromARGB(255, 221, 6, 6),
+                          ),
                         ),
                       ),
-                    ),
-                  ):null,
-                  );
+                    )
+                  : null,
+    );
   }
 }
 
