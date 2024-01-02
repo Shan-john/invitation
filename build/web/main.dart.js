@@ -69305,8 +69305,8 @@ return A.oE(A.a([A.Yj("https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a018807
 A.HQ.prototype={
 L(a){return B.z2}}
 A.HR.prototype={
-L(a){var s=null,r="https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"
-return A.e2(s,A.oE(A.a([A.fi("Discover\nOur Wedding Venues",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,30,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),A.fi("Join Us\nin Celebrating Love and Togetherness",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),new A.lL("assests/map.png",350,B.ch,s),A.fi("Click on the link below\nExplore the location.",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),A.fi("Be there",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,45,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),new A.qJ("Home","https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA",s),A.Eg(20),new A.qJ("Church",r,s),A.Eg(20),new A.qJ("Church",r,s)],t.E),B.aj,B.aZ),s,s,s,s,s,s,s)}}
+L(a){var s=null
+return A.e2(s,A.oE(A.a([A.fi("Discover\nOur Wedding Venues",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,30,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),A.fi("Join Us\nin Celebrating Love and Togetherness",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),new A.lL("assests/map.png",350,B.ch,s),A.fi("Click on the link below\nExplore the location.",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),A.fi("Be there",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,45,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),new A.qJ("Home","https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA",s),A.Eg(20),new A.qJ("Church","https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d251953.29041327952!2d76.59837068335862!3d9.353595703479481!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0640e702446599%3A0x3b2ed664f62a09f!2sBethel%20Marthoma%20Syrian%20Church!5e0!3m2!1sen!2sin!4v1704200046337!5m2!1sen!2sin",s),A.Eg(20),new A.qJ("Church","https://maps.app.goo.gl/29J6VtXBtKWXYA1S9",s)],t.E),B.aj,B.aZ),s,s,s,s,s,s,s)}}
 A.HS.prototype={
 L(a){var s=null,r="https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"
 return A.e2(s,A.oE(A.a([A.fi("Upcoming\nevents",A.dT(s,s,B.i,s,s,s,s,s,s,s,s,40,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aN),new A.ui("Event Title 1",r,s),A.Eg(20),new A.ui("Event Title 2",r,s)],t.E),B.aj,B.pm),s,s,s,s,s,s,s)}}
