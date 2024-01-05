@@ -15,10 +15,10 @@ class VenueLink extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: ElevatedButton(
         onPressed: () {
-          //    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          //   return WebViewhelper(url);
-          // }));
-          launchweb(uri: url);
+             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+            return WebViewhelper(url);
+          }));
+          // launchweb(uri: url);
         },
         child: Text(
           label,
