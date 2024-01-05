@@ -19,7 +19,7 @@ class Section1 extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleContainer("Date", "10"),
+            CircleContainer("Date", "15"),
             CircleContainer("Month", "july"),
             CircleContainer("Year", "2024"),
           ],

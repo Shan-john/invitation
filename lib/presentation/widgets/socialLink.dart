@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:invitation/presentation/webveiw/webveiw.dart';
+import 'dart:html'as html;
+
+import 'package:invitation/presentation/widgets/venuelink.dart';
 
 
 class SocialLink extends StatelessWidget {
@@ -14,9 +16,9 @@ class SocialLink extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: TextButton(
         onPressed: () =>
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          return WebViewhelper(url);
-        })),
+         
+          html.window.open(url,""),
+       
         child: Text(label),
       ),
     );

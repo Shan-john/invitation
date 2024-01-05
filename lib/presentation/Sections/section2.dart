@@ -17,7 +17,7 @@ class Section2 extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         Text(
-          "Save the date\nShone John and Sneha Paul's\nspecial day on [Wedding Date].\nJoin us in celebrating a new chapter!",
+          "Save the date\nShone John and Sneha Paul's\nspecial day on 15/07/2024.\nJoin us in celebrating a new chapter!",
           style: TextStyle(fontSize: 20, color: Colors.white),
           textAlign: TextAlign.center,
         ),

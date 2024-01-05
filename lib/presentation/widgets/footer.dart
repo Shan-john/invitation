@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:invitation/presentation/webveiw/webveiw.dart';
+ import 'dart:html'as html;
 import 'package:invitation/presentation/widgets/socialLink.dart';
 import 'package:invitation/presentation/widgets/venuelink.dart';
 
@@ -19,10 +19,10 @@ class Footer extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () =>  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          return WebViewhelper("https://github.com/Shan-john");
-        })),
-             
+            onPressed: () =>   
+           html.window.open("https://github.com/Shan-john",""),
+         
+          
             child: Text(
               "Shan John",
               style: TextStyle(
