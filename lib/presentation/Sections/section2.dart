@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:invitation/presentation/widgets/imagesection.dart';
@@ -10,7 +9,7 @@ class Section2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const  Column(
+    return const Column(
       children: [
         Text(
           "Save the Date\nfor the Wedding\nCelebration!",
@@ -18,7 +17,7 @@ class Section2 extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         Text(
-          "Save the date\nShone John and Sneha Ann Paul's\nspecial day on [Wedding Date].\nJoin us in celebrating a new chapter!",
+          "Save the date\nShone John and Sneha Paul's\nspecial day on [Wedding Date].\nJoin us in celebrating a new chapter!",
           style: TextStyle(fontSize: 20, color: Colors.white),
           textAlign: TextAlign.center,
         ),

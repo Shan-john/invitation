@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:invitation/presentation/webveiw/webveiw.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:html' as html;
 
 class VenueLink extends StatelessWidget {
   final String label;
@@ -15,9 +16,11 @@ class VenueLink extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: ElevatedButton(
         onPressed: () {
-             Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-            return WebViewhelper(url);
-          }));
+          //  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          // return WebViewhelper(url);
+
+          // }));
+          html.window.open(url, "");
           // launchweb(uri: url);
         },
         child: Text(
