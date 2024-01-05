@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:invitation/presentation/webveiw/webveiw.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -14,10 +14,12 @@ class VenueLink extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(10),
       child: ElevatedButton(
-        onPressed: () =>
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          return WebViewhelper(url);
-        })), 
+        onPressed: () {
+          //    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+          //   return WebViewhelper(url);
+          // }));
+          launchweb(uri: url);
+        },
         child: Text(
           label,
           style: TextStyle(color: Colors.black),
@@ -27,12 +29,23 @@ class VenueLink extends StatelessWidget {
   }
 }
 
-//   void launchweb({required String url}) async {
-//     final _url = Uri.parse('${url}');
+void launchweb({required String uri}) async {
+  final url = Uri.parse(uri);
 
-//     try {
-//       await launchUrl(_url);
-//     } catch (e) {
-//       print(e);
-//     }
-//   }
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    showMessage(message: "unable to locate ");
+  }
+}
+
+Future<bool?> showMessage({required String message}) {
+  return Fluttertoast.showToast(
+      msg: message,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.CENTER,
+      timeInSecForIosWeb: 1,
+      backgroundColor: const Color.fromARGB(255, 41, 40, 40),
+      textColor: Colors.white,
+      fontSize: 16.0);
+}
