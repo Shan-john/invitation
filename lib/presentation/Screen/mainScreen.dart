@@ -5,7 +5,7 @@ import 'package:invitation/presentation/Sections/section2.dart';
 import 'package:invitation/presentation/Sections/section3.dart';
 import 'package:invitation/presentation/Sections/section4.dart';
 import 'package:invitation/presentation/Sections/section5.dart';
-import 'package:invitation/presentation/camera_gallery_pick_menu.dart';
+import 'package:invitation/presentation/widgets/camera_gallery_pick_menu.dart';
 
 class MyHomePage extends StatelessWidget {
   @override

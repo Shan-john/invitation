@@ -34,7 +34,7 @@ class Section3 extends StatelessWidget {
           ),
           Text(
             "Be there",
-            style: TextStyle(fontSize: 45, color: Colors.white),
+            style: TextStyle(fontSize: 45, color: Colors.white,fontFamily: 'Pacifico',),
             textAlign: TextAlign.center,
           ),
           VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),

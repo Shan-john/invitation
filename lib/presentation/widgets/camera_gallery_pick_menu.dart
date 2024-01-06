@@ -50,7 +50,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
             captureImageFromGallery();
           }),
 
-            /// nectbgdiufgdufgpsduuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+            
             TextButtonforcameraGallery(
                 icon: Icons.photo,
                 label: "Gallery",
@@ -69,7 +69,7 @@ class TextButtonforcameraGallery extends StatelessWidget {
   final IconData icon;
   final String label;
   final Function() ontap;
-  TextButtonforcameraGallery({
+  const TextButtonforcameraGallery({
     super.key,
     required this.icon,
     required this.label,
@@ -84,16 +84,16 @@ class TextButtonforcameraGallery extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Gap(20),
+            const Gap(20),
             Icon(
               icon,
               size: 40,
-              color: Color.fromARGB(255, 222, 225, 255),
+              color: const Color.fromARGB(255, 222, 225, 255),
             ),
-            Gap(20),
+            const Gap(20),
             Text(
               label,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 24,
                 color: Color.fromARGB(255, 255, 255, 255),
               ),
