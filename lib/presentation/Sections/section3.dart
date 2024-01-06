@@ -32,14 +32,16 @@ class Section3 extends StatelessWidget {
             style: TextStyle(fontSize: 20, color: Colors.white),
             textAlign: TextAlign.center,
           ),
+          Gap(20),
           Text(
             "Be there",
             style: TextStyle(fontSize: 45, color: Colors.white,fontFamily: 'Pacifico',),
             textAlign: TextAlign.center,
           ),
+          Gap(20),
           VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
           Gap(20),
-          VenueLink("Church", churchemurl),
+          VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
           Gap(20),
           VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
         ],
@@ -47,6 +49,4 @@ class Section3 extends StatelessWidget {
     );
   }
 }
-
-String churchemurl =
-    "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d251953.29041327952!2d76.59837068335862!3d9.353595703479481!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0640e702446599%3A0x3b2ed664f62a09f!2sBethel%20Marthoma%20Syrian%20Church!5e0!3m2!1sen!2sin!4v1704200046337!5m2!1sen!2sin";
+ 

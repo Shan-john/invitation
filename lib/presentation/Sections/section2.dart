@@ -10,6 +10,7 @@ class Section2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           "Save the Date\nfor the Wedding\nCelebration!",
