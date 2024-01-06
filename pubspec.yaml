@@ -84,7 +84,8 @@ flutter:
     - assests\img2.gif
     - assests\img2.jpg
     - assests\map.png
-    - assests\vdo.gif
+    - assests\vdo.gif 
+    - assests\savethedate.png 
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
