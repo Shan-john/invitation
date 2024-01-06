@@ -9,10 +9,13 @@ class Section2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+       Container(
+        child: Column(
+          children: [
+             Text(
           "Save the Date\nfor the Wedding\nCelebration!",
           style: TextStyle(fontSize: 27, color: Colors.white),
           textAlign: TextAlign.center,
@@ -22,6 +25,9 @@ class Section2 extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
           textAlign: TextAlign.center,
         ),
+          ],
+        ),
+       ),
         Gap(30),
         imagesection(
           alignmentGeometry: Alignment.centerRight,
