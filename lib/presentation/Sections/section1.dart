@@ -17,7 +17,7 @@ class Section1 extends StatelessWidget {
             "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",fit: BoxFit.cover,
           ),
           // Container(
-          //   alignment: Alignment.center,
+           //   alignment: Alignment.center,
           //   height: 300,
           //   width: 350,
           //   // decoration: BoxDecoration(image: DecorationImage(
