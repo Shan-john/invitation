@@ -24,7 +24,7 @@ class Section3 extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           imagesection(
-              image: "assests/map.png",
+              image: "assets/map.png",
               heigth: 350,
               alignmentGeometry: Alignment.centerLeft),
           Text(
@@ -35,9 +35,13 @@ class Section3 extends StatelessWidget {
           Gap(20),
           Text(
             "Be there",
-            style: TextStyle(fontSize: 50, color: Colors.white,fontFamily: 'Pacifico',),
+            style: TextStyle(
+              fontSize: 50,
+              color: Colors.white,
+              fontFamily: 'Pacifico',
+            ),
             textAlign: TextAlign.center,
-          ), 
+          ),
           Gap(20),
           VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
           Gap(20),
@@ -49,4 +53,3 @@ class Section3 extends StatelessWidget {
     );
   }
 }
- 

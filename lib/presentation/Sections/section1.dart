@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-
+import 'package:lottie/lottie.dart';
 import '../widgets/circlecontainer.dart';
 
 class Section1 extends StatelessWidget {
@@ -11,28 +10,24 @@ class Section1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
       child: Stack(
         alignment: Alignment.center,
         children: [
           Image.network(
-            "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",
-             
+            "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",fit: BoxFit.cover,
           ),
-      Container(
-        alignment: Alignment.center,
-        height: 300,
-        width: 350,
-        decoration: BoxDecoration(image: DecorationImage(
-          fit: BoxFit.cover,
-          image: AssetImage( "assests/savethedate.png" )
-        )),
-        
-      
-      ),
+          // Container(
+          //   alignment: Alignment.center,
+          //   height: 300,
+          //   width: 350,
+          //   // decoration: BoxDecoration(image: DecorationImage(
+          //   //   fit: BoxFit.cover,
+          //   //   image: AssetImage( "assets/savethedate.png" )
+          //   // )),
+          //   child:
+       
           Positioned(
             bottom: 0,
-          
             left: 0,
             right: 0,
             child: Row(

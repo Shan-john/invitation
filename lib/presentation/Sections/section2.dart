@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:invitation/presentation/widgets/imagesection.dart';
+import 'package:lottie/lottie.dart';
+import 'dart:html';
 
 class Section2 extends StatelessWidget {
   const Section2({
@@ -9,13 +11,10 @@ class Section2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       Container(
-        child: Column(
-          children: [
-             Text(
+        Text(
           "Save the Date\nfor the Wedding\nCelebration!",
           style: TextStyle(fontSize: 27, color: Colors.white),
           textAlign: TextAlign.center,
@@ -25,29 +24,26 @@ class Section2 extends StatelessWidget {
           style: TextStyle(fontSize: 20, color: Colors.white),
           textAlign: TextAlign.center,
         ),
-          ],
-        ),
-       ),
         Gap(30),
         imagesection(
           alignmentGeometry: Alignment.centerRight,
           heigth: 350,
-          image: "assests/img1.gif",
+          image: "assets/img1.gif",
         ),
         imagesection(
           alignmentGeometry: Alignment.centerLeft,
           heigth: 350,
-          image: "assests/vdo.gif",
+          image: "assets/vdo.gif",
         ),
         imagesection(
           alignmentGeometry: Alignment.centerRight,
           heigth: 350,
-          image: "assests/img2.jpg",
+          image: "assets/img2.jpg",
         ),
         imagesection(
           alignmentGeometry: Alignment.centerLeft,
           heigth: 350,
-          image: "assests/img2.gif",
+          image: "assets/img2.gif",
         ),
       ],
     );
