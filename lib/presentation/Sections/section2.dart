@@ -12,7 +12,7 @@ class Section2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 600,
+     
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

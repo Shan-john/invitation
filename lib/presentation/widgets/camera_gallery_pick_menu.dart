@@ -1,7 +1,6 @@
 import 'dart:math';
 import 'dart:typed_data';
 import 'package:gap/gap.dart';
-import 'package:invitation/layout/layout_builder.dart';
 import 'package:invitation/presentation/Screen/pages/all_image_veiw_screen.dart';
 import 'package:invitation/service/firebasehelper.dart';
 
@@ -57,7 +56,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
                 label: "Gallery",
                 ontap: () {
                   Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (cxt) => const Responsive_Layout_Gallery( )));
+                      .push(MaterialPageRoute(builder: (cxt) => const Gallery( )));
                 },),
           ],
         ),

@@ -31,11 +31,13 @@ class desktopdisplay extends StatelessWidget {
       backgroundColor: Colors.black,
       body: SizedBox(
       height: 50,
-      child: Text(
-        "For a better experience, switch to mobile view! Desktop is not supported.",
-        style: TextStyle(
-            fontSize: 40, color: Color.fromARGB(255, 255, 255, 255)),
-        textAlign: TextAlign.center,
+      child: Center(
+        child: Text(
+          "For a better experience, switch to mobile view! Desktop is not supported.",
+          style: TextStyle(
+              fontSize: 40, color: Color.fromARGB(255, 255, 255, 255)),
+          textAlign: TextAlign.center,
+        ),
       ),
     )) ;
   }

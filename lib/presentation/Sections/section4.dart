@@ -11,7 +11,7 @@ class Section4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       width: 600,
+    
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

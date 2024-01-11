@@ -9,8 +9,8 @@ enum layout {
   desktop;
 }
 class Gallery extends StatefulWidget {
-  final layout type;
-  const Gallery({super.key, required this.type});
+  
+  const Gallery({super.key, });
 
   @override
   State<Gallery> createState() => _GalleryState();
@@ -55,7 +55,7 @@ class _GalleryState extends State<Gallery> {
       body: isloading != true && hasNotData != true
           ? ListView(
               children: [
-                gridpro(hsize: size.height, imagelist: reversediamgeData,type: widget.type)
+                gridpro(hsize: size.height, imagelist: reversediamgeData,)
               ],
             )
           : isloading == true
@@ -96,7 +96,7 @@ class _GalleryState extends State<Gallery> {
 Widget gridpro({
   required List<String> imagelist,
   required double hsize,
-  required  layout type ,
+ 
 }) {
   int imagelistlength = imagelist.length; //product list count
 
@@ -106,7 +106,7 @@ Widget gridpro({
     shrinkWrap: true,
     physics: ScrollPhysics(parent: NeverScrollableScrollPhysics()),
     gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: type == layout.mobile ? 2 : 5,
+      crossAxisCount: 2,
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       childAspectRatio: 0.77,
