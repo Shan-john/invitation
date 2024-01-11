@@ -33,7 +33,7 @@ class desktopdisplay extends StatelessWidget {
       height: 50,
       child: Center(
         child: Text(
-          "For a better experience, switch to mobile view! Desktop is not supported.",
+          "For a better experience, switch to mobile view! Desktop veiw is not supported.",
           style: TextStyle(
               fontSize: 40, color: Color.fromARGB(255, 255, 255, 255)),
           textAlign: TextAlign.center,
