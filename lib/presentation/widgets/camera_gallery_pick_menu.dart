@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'dart:typed_data';
+import 'package:flutter/routes.dart';
 import 'package:gap/gap.dart';
 import 'package:invitation/presentation/Screen/pages/all_image_veiw_screen.dart';
 import 'package:invitation/service/firebasehelper.dart';
@@ -46,18 +47,19 @@ class _mySelectionmenu extends State<Selectionmenu> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          TextButtonforcameraGallery(icon: Icons.camera, label: "Pick / Take Image", ontap: (){
-            captureImageFromGallery();
-          }),
-
-            
             TextButtonforcameraGallery(
-                icon: Icons.photo,
-                label: "Gallery",
+                icon: Icons.camera,
+                label: "Pick / Take Image",
                 ontap: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (cxt) => const Gallery( )));
-                },),
+                  captureImageFromGallery();
+                }),
+            TextButtonforcameraGallery(
+              icon: Icons.photo,
+              label: "Gallery",
+              ontap: () {
+                Routes.instance.push(widget: Gallery(), context: context);
+              },
+            ),
           ],
         ),
       ),
