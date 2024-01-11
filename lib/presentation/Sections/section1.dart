@@ -16,13 +16,10 @@ class Section1 extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Container(
-            height: 1080,
-            decoration: BoxDecoration(
-              
-              image: DecorationImage(
-                fit: BoxFit.fitWidth,
-                image: NetworkImage( "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",))
-            ),
+            height: 1000,
+            
+           
+            child: Image.network( "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg", fit: BoxFit.fitWidth,),
           ),
           
           // Image.network(
