@@ -10,14 +10,21 @@ class Section5 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+     
       child: Column(
         children: [
           Container(
             alignment: Alignment.centerRight,
-            margin: EdgeInsets.only(
-                left: 10, right: 10, top: 10, bottom: 10),
-            child: Image.network(
-                "https://i.pinimg.com/564x/3a/35/14/3a35143c3e8c3fb2bdcab412e42f40e1.jpg"),
+            height: 1080,
+            // margin: EdgeInsets.only(
+            //     left: 10, right: 10, top: 10, bottom: 10),
+            decoration: BoxDecoration(
+              
+              image: DecorationImage(
+                fit: BoxFit.contain,
+                image: NetworkImage( "https://i.pinimg.com/564x/3a/35/14/3a35143c3e8c3fb2bdcab412e42f40e1.jpg",))
+            ), 
+           
           ),
           Container(
             height: 2,

@@ -1,10 +1,16 @@
+ 
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:invitation/service/firebasehelper.dart';
-
+enum layout {
+  mobile,
+  desktop;
+}
 class Gallery extends StatefulWidget {
-  const Gallery({super.key});
+  final layout type;
+  const Gallery({super.key, required this.type});
 
   @override
   State<Gallery> createState() => _GalleryState();
@@ -49,7 +55,7 @@ class _GalleryState extends State<Gallery> {
       body: isloading != true && hasNotData != true
           ? ListView(
               children: [
-                gridpro(hsize: size.height, imagelist: reversediamgeData)
+                gridpro(hsize: size.height, imagelist: reversediamgeData,type: widget.type)
               ],
             )
           : isloading == true
@@ -90,6 +96,7 @@ class _GalleryState extends State<Gallery> {
 Widget gridpro({
   required List<String> imagelist,
   required double hsize,
+  required  layout type ,
 }) {
   int imagelistlength = imagelist.length; //product list count
 
@@ -98,8 +105,8 @@ Widget gridpro({
     primary: false,
     shrinkWrap: true,
     physics: ScrollPhysics(parent: NeverScrollableScrollPhysics()),
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: 2,
+    gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: type == layout.mobile ? 2 : 5,
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       childAspectRatio: 0.77,
@@ -150,7 +157,7 @@ Widget bestproductcard(
               color: HexColor("#343537"),
               spreadRadius: 1,
               blurRadius: 1,
-              offset: Offset(
+              offset: const Offset(
                 -3,
                 -3,
               ),
@@ -159,7 +166,7 @@ Widget bestproductcard(
               color: HexColor("#161616"),
               spreadRadius: 1,
               blurRadius: 1,
-              offset: Offset(
+              offset: const Offset(
                 3,
                 3,
               ),

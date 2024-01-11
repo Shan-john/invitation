@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import '../widgets/circlecontainer.dart';
@@ -13,9 +15,19 @@ class Section1 extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          Image.network(
-            "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",fit: BoxFit.cover,
+          Container(
+            height: 1080,
+            decoration: BoxDecoration(
+              
+              image: DecorationImage(
+                fit: BoxFit.fitWidth,
+                image: NetworkImage( "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",))
+            ),
           ),
+          
+          // Image.network(
+          //   "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",fit: BoxFit.fill,
+          // ),
           // Container(
            //   alignment: Alignment.center,
           //   height: 300,

@@ -12,6 +12,7 @@ class Footer extends StatelessWidget {
       color: const Color.fromARGB(255, 0, 0, 0),
       child: Column(
         children: [
+           
           Text(
             "Designed and Developed by",
             style: TextStyle(
