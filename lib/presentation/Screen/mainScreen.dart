@@ -6,7 +6,17 @@ import 'package:invitation/presentation/Sections/section3.dart';
 import 'package:invitation/presentation/Sections/section4.dart';
 import 'package:invitation/presentation/Sections/section5.dart';
 import 'package:invitation/presentation/widgets/camera_gallery_pick_menu.dart';
-
+/// **MyHomePage Class Documentation**
+///
+/// The `MyHomePage` class represents the main screen of the Flutter application.
+/// It is a StatelessWidget, meaning it does not have any mutable state.
+///
+/// ## Usage
+///
+/// ```dart
+/// // Example usage of MyHomePage widget
+/// MyHomePage homePage = MyHomePage();
+/// ```
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
