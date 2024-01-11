@@ -36,12 +36,12 @@ class imagesection extends StatelessWidget {
 
   /// The height of the image section.
   final double height;
-
+ 
   /// The alignment of the image within the section.
   final AlignmentGeometry alignmentGeometry;
 
   /// Constructor for the `imagesection` class.
-  ///
+  
   /// The [image] parameter is the path to the image asset.
   /// The [height] parameter is the height of the image section.
   /// The [alignmentGeometry] parameter is the alignment of the image within the section.
@@ -57,7 +57,7 @@ class imagesection extends StatelessWidget {
     return Container(
       alignment: alignmentGeometry,
       height: height,
-      margin: EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+      margin: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
       child: Image.asset(image),
     );
   }
