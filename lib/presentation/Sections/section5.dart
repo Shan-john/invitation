@@ -18,8 +18,13 @@ class Section5 extends StatelessWidget {
             height: 1000,
             // margin: EdgeInsets.only(
             //     left: 10, right: 10, top: 10, bottom: 10),
-            
-           child: Image.network("https://i.pinimg.com/564x/3a/35/14/3a35143c3e8c3fb2bdcab412e42f40e1.jpg",   fit: BoxFit.contain,),
+            decoration: BoxDecoration(
+              
+              image: DecorationImage(
+                fit: BoxFit.contain,
+                image: NetworkImage( "https://i.pinimg.com/564x/3a/35/14/3a35143c3e8c3fb2bdcab412e42f40e1.jpg",))
+            ), 
+           
           ),
           Container(
             height: 2,
