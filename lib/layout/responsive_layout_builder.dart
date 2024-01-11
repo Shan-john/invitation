@@ -25,11 +25,18 @@ class desktopdisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      "For a better experience, switch to mobile view! Desktop is not supported.",
-      style: TextStyle(
-          fontSize: 40, color: const Color.fromARGB(255, 255, 255, 255)),
-      textAlign: TextAlign.center,
-    );
+    
+    return
+    const Scaffold(
+      backgroundColor: Colors.black,
+      body: SizedBox(
+      height: 50,
+      child: Text(
+        "For a better experience, switch to mobile view! Desktop is not supported.",
+        style: TextStyle(
+            fontSize: 40, color: Color.fromARGB(255, 255, 255, 255)),
+        textAlign: TextAlign.center,
+      ),
+    )) ;
   }
 }
