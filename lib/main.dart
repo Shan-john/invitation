@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 import 'package:flutter/material.dart';
 import 'package:invitation/layout/layout_builder.dart';
+import 'package:invitation/layout/responsive_layout_builder.dart';
  
 import 'package:invitation/presentation/Screen/mainScreen.dart';
 import 'package:lottie/lottie.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       
-      home: Responsive_Layout_Gallery()
+      home: Responsive_Layout()
     );
   }
 }
