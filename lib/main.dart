@@ -21,6 +21,7 @@ void main() async {
       storageBucket: "wedding-invitation-card-sj.appspot.com",
       messagingSenderId: "309684858289",
       appId: "1:309684858289:web:b50cfe39b94b564783e190",
+      
     ),
   );
 
