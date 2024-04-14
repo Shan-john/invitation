@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       body: const SingleChildScrollView(
-        
+          physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             // Section 1

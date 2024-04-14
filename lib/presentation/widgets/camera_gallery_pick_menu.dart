@@ -72,7 +72,7 @@ class _mySelectionmenu extends State<Selectionmenu> {
           children: [
             TextButtonforcameraGallery(
               icon: Icons.camera,
-              label: "Pick / Take Image",
+              label: "Upload image",
               ontap: () {
                 captureImageFromGallery();
               },
