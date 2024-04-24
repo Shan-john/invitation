@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/circlecontainer.dart';
+
 /// **Section1 Class Documentation**
 ///
 /// The `Section1` class represents a section in the Flutter application.
@@ -13,16 +14,19 @@ import '../widgets/circlecontainer.dart';
 /// Section1 section1 = Section1();
 /// ```
 class Section1 extends StatelessWidget {
+  
+
   /// Constructor for the `Section1` class.
   ///
   /// The [key] parameter is used to provide a key for the widget.
   const Section1({
-    super.key,
+    super.key,  
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
+     
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -31,7 +35,7 @@ class Section1 extends StatelessWidget {
             "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",
             fit: BoxFit.fill,
           ),
-          
+
           // Positioned row at the bottom of the image
           Positioned(
             bottom: 0,
@@ -42,10 +46,10 @@ class Section1 extends StatelessWidget {
               children: [
                 // Display circle container with date
                 CircleContainer("Date", "15"),
-                
+
                 // Display circle container with month
                 CircleContainer("Month", "July"),
-                
+
                 // Display circle container with year
                 CircleContainer("Year", "2024"),
               ],

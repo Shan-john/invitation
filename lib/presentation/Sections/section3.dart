@@ -34,7 +34,7 @@ class Section3 extends StatelessWidget {
           ),
           Text(
             "Join Us\nin Celebrating Love and Togetherness",
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: TextStyle(fontSize: 20, color: Colors.white54),
             textAlign: TextAlign.center,
           ),
           // Display an image section with a specific alignment
@@ -44,7 +44,7 @@ class Section3 extends StatelessWidget {
               alignmentGeometry: Alignment.centerLeft),
           Text(
             "Click on the link below\nExplore the location.",
-            style: TextStyle(fontSize: 20, color: Colors.white),
+            style: TextStyle(fontSize: 20, color: Colors.white54),
             textAlign: TextAlign.center,
           ),
           Gap(20),
@@ -61,7 +61,7 @@ class Section3 extends StatelessWidget {
           // Display VenueLinks for different locations
           VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
           Gap(20),
-          VenueLink("Wedimg At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+          VenueLink("Wedding At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
           Gap(20),
           VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
         ],
