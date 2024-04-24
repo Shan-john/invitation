@@ -79,7 +79,7 @@ class _Section2State extends State<Section2> {
             image: "assets/map.png",
           ),
           Padding(
-            padding: const EdgeInsets.only(left:18.0),
+            padding: const EdgeInsets.only(left:18.0,top: 50),
             child: Text(
                   
                 "Gallery", 
@@ -87,7 +87,7 @@ class _Section2State extends State<Section2> {
                  
               ),
           ),
-          Gap(20),
+          Gap(50),
             CarouselDemo(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

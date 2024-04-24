@@ -45,10 +45,10 @@ class Section1 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Display circle container with date
-                CircleContainer("Date", "15"),
+                CircleContainer("Date", "27"),
 
                 // Display circle container with month
-                CircleContainer("Month", "July"),
+                CircleContainer("Month", "June"),
 
                 // Display circle container with year
                 CircleContainer("Year", "2024"),

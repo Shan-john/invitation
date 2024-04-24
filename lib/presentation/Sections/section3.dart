@@ -61,7 +61,7 @@ class Section3 extends StatelessWidget {
           // Display VenueLinks for different locations
           VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
           Gap(20),
-          VenueLink("Wedding At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+          VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
           Gap(20),
           VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
         ],

@@ -53,9 +53,13 @@ class EventTile extends StatelessWidget {
         ),
         
         // Display the title of the event
-        Text(
-          title,
-          style: TextStyle(color: Colors.white),
+        SizedBox(
+          width: 290,
+          height: 200,
+          child: Text(
+            title,
+            style: TextStyle(color: Colors.white,fontSize: 16),
+          ),
         ),
       ],
     );
