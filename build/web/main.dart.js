@@ -70091,7 +70091,7 @@ K(a){var s=null
 return A.d3(s,A.iW(A.a([A.dt(this.c,s,s),A.dt(this.d,s,s)],t.E),B.am,B.hs),s,s,new A.e1(B.i,s,s,s,s,s,B.co),100,new A.aS(15,15,15,15),s,100)}}
 A.uf.prototype={
 K(a){var s=null
-return A.Hh(A.a([A.XO(this.d,s,180,160),A.q1(A.dt(this.c,A.d0(s,s,B.i,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),200,260)],t.E),B.am,B.aJ,B.bU)}}
+return A.Hh(A.a([A.XO(this.d,s,180,160),A.q1(A.dt(this.c,A.d0(s,s,B.i,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),200,240)],t.E),B.am,B.aJ,B.bU)}}
 A.DU.prototype={
 K(a){var s=null,r=t.E
 return A.d3(s,A.iW(A.a([A.dt("Designed and Developed by",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),A.akQ(A.dt("Shan John",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),new A.WB()),A.Hh(A.a([new A.q5("Instagram","https://www.instagram.com/s_h_a_n_j_o_h_n",s),new A.q5("LinkedIn","https://www.linkedin.com/in/shan-john",s),new A.q5("GitHub","https://github.com/Shan-john",s)],r),B.am,B.hs,B.bU)],r),B.am,B.aJ),B.j,s,s,s,s,new A.aS(20,20,20,20),s)}}

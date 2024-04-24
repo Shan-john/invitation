@@ -54,7 +54,7 @@ class EventTile extends StatelessWidget {
         
         // Display the title of the event
         SizedBox(
-          width: 260,
+          width: 240,
           height: 200,
           child: Text(
             title,
