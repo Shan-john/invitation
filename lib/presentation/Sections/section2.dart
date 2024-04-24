@@ -96,7 +96,7 @@ class _Section2State extends State<Section2> {
               Center(
                 child: Text(
                   
-                "Are you interested in \n knowing more  about the \n Shone John and Rinila Mary Jobson..!", 
+                "Are you interested in \n knowing more  about the \n Bride and Groom", 
                 style: TextStyle(fontSize: 25, color: Colors.white54),
                 textAlign: TextAlign.center,
                             ),
@@ -108,9 +108,9 @@ class _Section2State extends State<Section2> {
              
               crossAxisAlignment: CrossAxisAlignment.center,
                children: [
-                 PrimaryButton("Groom", 50 , () => null,150),
+                 PrimaryButton("Bride", 50 , () => null,150),
                  Gap(50),
-                  PrimaryButton("Bride", 50 , () => null,150),
+                  PrimaryButton("Groom", 50 , () => null,150),
                 
                ],
              ),
