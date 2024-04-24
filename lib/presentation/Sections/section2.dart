@@ -83,7 +83,7 @@ class _Section2State extends State<Section2> {
             child: Text(
                   
                 "Gallery", 
-                style: TextStyle(fontSize: 45, color: Colors.white54,fontWeight: FontWeight.w700),
+                style: TextStyle(fontSize: 45, color: Colors.white54,fontWeight: FontWeight.w700,letterSpacing: 2),
                  
               ),
           ),

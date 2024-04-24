@@ -70032,7 +70032,7 @@ A.x4.prototype={
 ai(){return new A.Oi(B.k)}}
 A.Oi.prototype={
 K(a){var s=null,r="assets/map.png",q=t.E
-return A.d3(s,A.iW(A.a([A.e7(50),new A.fe(new A.aS(8,0,0,0),A.iW(A.a([A.dt("Save the Date\nfor the Wedding\nCelebration!",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,27,s,s,B.dD,s,s,!0,s,s,s,s,s,s,s,s),B.au),A.dt("Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 15/07/2024.\nJoin us in celebrating a new chapter!",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.au)],q),B.am,B.aJ),s),A.e7(30),new A.lD(r,350,B.bJ,s),new A.lD(r,350,B.cj,s),new A.lD(r,350,B.bJ,s),new A.lD(r,350,B.cj,s),new A.fe(B.zM,A.dt("Gallery",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,45,s,s,B.dD,s,s,!0,s,s,s,s,s,s,s,s),s),s),A.e7(50),new A.C2(new A.Sy(new A.aX(new A.a4($.a7,t.wC),t.Fe)),s),A.iW(A.a([A.e7(150),A.kc(A.dt("Are you interested in \n knowing more  about the \n Shone John and Rinila Mary Jobson..!",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.au),s,s),A.e7(50),A.kc(A.iW(A.a([new A.we("Groom",50,150,new A.aaq(),s),A.e7(50),new A.we("Bride",50,150,new A.aar(),s)],q),B.am,B.aJ),s,s)],q),B.cz,B.aJ)],q),B.cz,B.aJ),s,s,s,s,s,s,s)}}
+return A.d3(s,A.iW(A.a([A.e7(50),new A.fe(new A.aS(8,0,0,0),A.iW(A.a([A.dt("Save the Date\nfor the Wedding\nCelebration!",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,27,s,s,B.dD,s,s,!0,s,s,s,s,s,s,s,s),B.au),A.dt("Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 15/07/2024.\nJoin us in celebrating a new chapter!",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.au)],q),B.am,B.aJ),s),A.e7(30),new A.lD(r,350,B.bJ,s),new A.lD(r,350,B.cj,s),new A.lD(r,350,B.bJ,s),new A.lD(r,350,B.cj,s),new A.fe(B.zM,A.dt("Gallery",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,45,s,s,B.dD,s,s,!0,s,2,s,s,s,s,s,s),s),s),A.e7(50),new A.C2(new A.Sy(new A.aX(new A.a4($.a7,t.wC),t.Fe)),s),A.iW(A.a([A.e7(150),A.kc(A.dt("Are you interested in \n knowing more  about the \n Shone John and Rinila Mary Jobson..!",A.d0(s,s,B.cw,s,s,s,s,s,s,s,s,25,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.au),s,s),A.e7(50),A.kc(A.iW(A.a([new A.we("Groom",50,150,new A.aaq(),s),A.e7(50),new A.we("Bride",50,150,new A.aar(),s)],q),B.am,B.aJ),s,s)],q),B.cz,B.aJ)],q),B.cz,B.aJ),s,s,s,s,s,s,s)}}
 A.aaq.prototype={
 $0(){return null},
 $S:7}
@@ -70091,7 +70091,7 @@ K(a){var s=null
 return A.d3(s,A.iW(A.a([A.dt(this.c,s,s),A.dt(this.d,s,s)],t.E),B.am,B.hs),s,s,new A.e1(B.i,s,s,s,s,s,B.co),100,new A.aS(15,15,15,15),s,100)}}
 A.uf.prototype={
 K(a){var s=null
-return A.Hh(A.a([A.XO(this.d,s,180,160),A.q1(A.dt(this.c,A.d0(s,s,B.i,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),200,290)],t.E),B.am,B.aJ,B.bU)}}
+return A.Hh(A.a([A.XO(this.d,s,180,160),A.q1(A.dt(this.c,A.d0(s,s,B.i,s,s,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),200,260)],t.E),B.am,B.aJ,B.bU)}}
 A.DU.prototype={
 K(a){var s=null,r=t.E
 return A.d3(s,A.iW(A.a([A.dt("Designed and Developed by",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),A.akQ(A.dt("Shan John",A.d0(s,s,B.i,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),new A.WB()),A.Hh(A.a([new A.q5("Instagram","https://www.instagram.com/s_h_a_n_j_o_h_n",s),new A.q5("LinkedIn","https://www.linkedin.com/in/shan-john",s),new A.q5("GitHub","https://github.com/Shan-john",s)],r),B.am,B.hs,B.bU)],r),B.am,B.aJ),B.j,s,s,s,s,new A.aS(20,20,20,20),s)}}
