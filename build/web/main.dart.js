@@ -70654,7 +70654,7 @@ A.Cj.prototype={
 J(a){return new A.ty(new A.T2(2,0.9,2,!0,!0),new A.T1(),this.c,5,null)}}
 A.T1.prototype={
 $3(a,b,c){var s=null,r=A.tk(new A.aP(20,20))
-return A.cI(s,s,B.p,s,s,new A.dB(s,A.aiW(B.Q,B.iT,new A.kE($.aC7[b],1,s)),s,r,s,s,B.b3),300,s,s,s)},
+return A.cI(s,s,B.p,s,s,new A.dB(s,A.aiW(B.Q,B.iT,new A.kE($.aC7[b],1,s)),s,r,s,s,B.b3),300,s,s,1/0)},
 $S:453}
 A.GA.prototype={
 J(a){var s=this,r=null
