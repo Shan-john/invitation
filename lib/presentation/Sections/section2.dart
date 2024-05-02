@@ -90,9 +90,9 @@ class _Section2State extends State<Section2> {
           ),
           Gap(50),
             CarouselDemo(),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+          // Column(
+          //   crossAxisAlignment: CrossAxisAlignment.start,
+          //   children: [
               // Gap(150),
               // Center(
               //   child: Text(
@@ -116,7 +116,7 @@ class _Section2State extends State<Section2> {
           //      ],
           //    ),
           //  )
-          ],),
+          // ],),
           
         ],
       ),
