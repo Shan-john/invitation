@@ -13,7 +13,7 @@ class CarouselDemo extends StatelessWidget {
     itemBuilder: (BuildContext context, int index,int pageindex) {
       return Container(
         height: 300,
-        color: Colors.amber,
+       
         decoration: BoxDecoration(
          borderRadius: BorderRadius.all(Radius.circular(20)),
           image: DecorationImage(
