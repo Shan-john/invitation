@@ -93,29 +93,29 @@ class _Section2State extends State<Section2> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Gap(150),
-              Center(
-                child: Text(
+              // Gap(150),
+              // Center(
+              //   child: Text(
                   
-                "Are you interested in \n knowing more  about the \n Bride and Groom", 
-                style: TextStyle(fontSize: 25, color: Colors.white54),
-                textAlign: TextAlign.center,
-                            ),
-              ),
-            Gap(50),
+              //   "Are you interested in \n knowing more  about the \n Bride and Groom", 
+              //   style: TextStyle(fontSize: 25, color: Colors.white54),
+              //   textAlign: TextAlign.center,
+              //               ),
+              // ),
+          //   Gap(50),
            
-           Center(
-             child: Column(
+          //  Center(
+          //    child: Column(
              
-              crossAxisAlignment: CrossAxisAlignment.center,
-               children: [
-                 PrimaryButton("Bride", 50 , () => null,150),
-                 Gap(50),
-                  PrimaryButton("Groom", 50 , () => null,150),
+          //     crossAxisAlignment: CrossAxisAlignment.center,
+          //      children: [
+          //        PrimaryButton("Bride", 50 , () => null,150),
+          //        Gap(50),
+          //         PrimaryButton("Groom", 50 , () => null,150),
                 
-               ],
-             ),
-           )
+          //      ],
+          //    ),
+          //  )
           ],),
           
         ],

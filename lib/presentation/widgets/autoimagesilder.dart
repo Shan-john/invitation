@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:invitation/presentation/core.dart';
 
 class CarouselDemo extends StatelessWidget {
   CarouselController buttonCarouselController = CarouselController();
@@ -32,8 +33,14 @@ class CarouselDemo extends StatelessWidget {
 }
 
 List list = [
-  "https://cdn.pixabay.com/photo/2024/03/26/21/10/ai-generated-8657781_640.jpg",
-  "https://cdn.pixabay.com/photo/2024/03/05/10/38/boat-8614314_1280.jpg",
+ 
+  Assetsimages.lanscape1,
+  Assetsimages.land1,
+   Assetsimages.land2,
+    Assetsimages.land3,
+     Assetsimages.land4,
+
+ 
   
 
 
