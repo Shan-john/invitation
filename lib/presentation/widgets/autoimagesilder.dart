@@ -32,7 +32,7 @@ class CarouselDemo extends StatelessWidget {
   );
 }
 
-List list = [
+List <String> list = [
  
   Assetsimages.lanscape1,
   Assetsimages.land1,
