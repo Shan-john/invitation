@@ -50,7 +50,7 @@ class _Section2State extends State<Section2> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  "Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 15/07/2024.\nJoin us in celebrating a new chapter!",
+                  "Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 27/06/2024.\nJoin us in celebrating a new chapter!",
                   style: TextStyle(fontSize: 20, color: Colors.white54),
                   textAlign: TextAlign.center,
                 ),
