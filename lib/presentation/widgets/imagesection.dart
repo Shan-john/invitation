@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:invitation/presentation/core.dart';
 // +-----------------------------+
 // |         imagesection         |
 // |  +-----------------------+  |
@@ -58,7 +59,7 @@ class imagesection extends StatelessWidget {
       alignment: alignmentGeometry,
       height: height,
       margin: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
-      child: Image.asset(image),
+      child: Image(image: AssetImage(image))
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:invitation/presentation/core.dart';
 import 'package:invitation/presentation/widgets/autoimagesilder.dart';
 import 'package:invitation/presentation/widgets/button.dart';
 import 'package:invitation/presentation/widgets/imagesection.dart';
@@ -61,22 +62,22 @@ class _Section2State extends State<Section2> {
           imagesection(
             alignmentGeometry: Alignment.centerRight,
             height: 350,
-            image: "assets/map.png",
+            image: Assetsimages.one,
           ),
           imagesection(
             alignmentGeometry: Alignment.centerLeft,
             height: 350,
-            image: "assets/map.png",
+            image: Assetsimages.two,
           ),
           imagesection(
             alignmentGeometry: Alignment.centerRight,
             height: 350,
-            image: "assets/map.png",
+            image:  Assetsimages.three,
           ),
           imagesection(
             alignmentGeometry: Alignment.centerLeft,
             height: 350,
-            image: "assets/map.png",
+            image: Assetsimages.four,
           ),
           Padding(
             padding: const EdgeInsets.only(left:18.0,top: 50),

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:invitation/presentation/core.dart';
 import 'package:invitation/presentation/widgets/footer.dart';
 
 /// **Section5 Class Documentation**
@@ -29,8 +30,8 @@ class Section5 extends StatelessWidget {
           // Display an image aligned to the center-right
           Container(
             alignment: Alignment.centerRight,
-            child: Image.network(
-                "https://i.pinimg.com/564x/3a/35/14/3a35143c3e8c3fb2bdcab412e42f40e1.jpg"),
+            child: Image.asset(
+                Assetsimages.protraitInvitationcard),
           ),
           // Divider line
           Container(

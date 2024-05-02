@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter/widgets.dart';
+import 'package:invitation/presentation/core.dart';
 import '../widgets/circlecontainer.dart';
 
 /// **Section1 Class Documentation**
@@ -26,35 +27,45 @@ class Section1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-     
-      child: Stack(
-        alignment: Alignment.center,
+      
+      child: Column(
         children: [
-          // Display an image from a network URL
-          Image.network(
-            "https://i.pinimg.com/564x/ef/62/5c/ef625cfde997b24a0188076813a85545.jpg",
-            fit: BoxFit.fill,
+          Stack(
+            alignment: Alignment.center,
+            children: [
+              // Display an image from a network URL
+              Image.asset(
+             Assetsimages.them,
+                fit: BoxFit.fill,
+              ),
+          
+              // Positioned row at the bottom of the image
+              Positioned(
+                bottom:0,
+                left: 0,
+                right: 0,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // Display circle container with date
+                    CircleContainer("Date", "27"),
+          
+                    // Display circle container with month
+                    CircleContainer("Month", "June"),
+          
+                    // Display circle container with year
+                    CircleContainer("Year", "2024"),
+                  
+                  ],
+                ),
+              ),
+             
+            ],
           ),
-
-          // Positioned row at the bottom of the image
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // Display circle container with date
-                CircleContainer("Date", "27"),
-
-                // Display circle container with month
-                CircleContainer("Month", "June"),
-
-                // Display circle container with year
-                CircleContainer("Year", "2024"),
-              ],
-            ),
-          ),
+            Container(
+                  height: 100,
+                  width: 100,
+                  child: Image.network("https://www.cgr.gob.ve/assets/img/scroll-down.gif"))
         ],
       ),
     );

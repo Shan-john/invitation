@@ -20,29 +20,20 @@ import 'package:invitation/presentation/widgets/camera_gallery_pick_menu.dart';
 /// // Example usage of MyHomePage widget
 /// MyHomePage homePage = MyHomePage();
 /// ```
-class MyHomePage extends StatefulWidget { 
-  
-  
- 
+class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-   
-
   @override
-   
   Widget build(BuildContext context) {
-   
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       floatingActionButton: SizedBox(
         height: 65,
         width: 65,
         child: FloatingActionButton(
-          
           onPressed: () {
             showDialog(
                 context: context,
@@ -58,25 +49,24 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      body:   ListView(
-        
-       scrollDirection: Axis.vertical,
+      body: ListView(
+        scrollDirection: Axis.vertical,
         children: [
           // Section 1
-           Section1(   ),
+          Gap(150),
+          Section1(),
           Gap(200),
           // Section 2
-         Section2(),
-           Gap(200),
-          // Section 3 
+          Section2(),
+          Gap(200),
+          // Section 3
           Section3(),
           Gap(200),
           // Section 4
           Section4(),
-           Gap(200),
+          Gap(200),
           // Section 5
           Section5(),
-         
         ],
       ),
     );
