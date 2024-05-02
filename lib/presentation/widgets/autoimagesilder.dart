@@ -18,7 +18,7 @@ class CarouselDemo extends StatelessWidget {
          borderRadius: BorderRadius.all(Radius.circular(20)),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(list[index],))
+            image:  AssetImage(list[index]))
         ),
       );
     },
