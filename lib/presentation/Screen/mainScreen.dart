@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
         scrollDirection: Axis.vertical,
         children: [
           // Section 1
-          Gap(150),
+         // Gap(150),
           Section1(),
           Gap(100),
           // Section 2

@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "734ca41fec310df0c858bff8d68ee4bd",
-"assets/AssetManifest.bin.json": "dbcd99a192e97d38863bd9ae36f98211",
-"assets/AssetManifest.json": "c776f399169b7fa9eb752be15491cbc8",
+const RESOURCES = {"assets/AssetManifest.bin": "7f5cc0abc2d268b64e0aa9bd7d8d5b3c",
+"assets/AssetManifest.bin.json": "6dc43744e68403af814638765203df19",
+"assets/AssetManifest.json": "8a150ef26f39e45e486bdf0cbe9654b6",
 "assets/assets/fonts/Pacifico-Regular.ttf": "85bb2d0ec4a0da159de42e89089ccc0b",
 "assets/assets/image/1.jpg": "b689facb88be1d406939f2039c4f3522",
 "assets/assets/image/2.jpg": "7b1faecde822aedc05d89d7a37957226",
@@ -20,6 +20,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "734ca41fec310df0c858bff8d68ee4bd
 "assets/assets/image/landscapecard.jpg": "c416bdee04bc65b13260e660c2dc46e4",
 "assets/assets/image/protraitInvitationcard.jpg": "aa8a296f438663b79782f3b9f0752180",
 "assets/assets/image/them.jpg": "6bf46d8f45bf25a5c81f714ab8550eee",
+"assets/assets/image/them1.jpg": "e443b64a96b5fb8ec7a7f8b0afc19ea2",
 "assets/assets/map.png": "c9d5bc73aa2d57ea65e586d66718cfc7",
 "assets/assets/savethedate.png": "3d6eca75f1f9c23e9d0c90106133ab99",
 "assets/assets%255Cimage%255C1.jpg": "b689facb88be1d406939f2039c4f3522",
@@ -35,6 +36,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "734ca41fec310df0c858bff8d68ee4bd
 "assets/assets%255Cimage%255Clandscapecard.jpg": "c416bdee04bc65b13260e660c2dc46e4",
 "assets/assets%255Cimage%255CprotraitInvitationcard.jpg": "aa8a296f438663b79782f3b9f0752180",
 "assets/assets%255Cimage%255Cthem.jpg": "6bf46d8f45bf25a5c81f714ab8550eee",
+"assets/assets%255Cimage%255Cthem1.jpg": "e443b64a96b5fb8ec7a7f8b0afc19ea2",
 "assets/assets%255Cmap.png": "c9d5bc73aa2d57ea65e586d66718cfc7",
 "assets/assets%255Csavethedate.png": "3d6eca75f1f9c23e9d0c90106133ab99",
 "assets/FontManifest.json": "848dcd580c80116c346cbe0ab9f89c2f",
@@ -58,9 +60,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "734ca41fec310df0c858bff8d68ee4bd
 "icons/Icon-maskable-192.png": "61b12f6aa3e9b96a6d7eb418e0003fba",
 "icons/Icon-maskable-512.png": "04fd1c48d1da6355ae1467f878e9c786",
 "icons/Icons-512.png": "04fd1c48d1da6355ae1467f878e9c786",
-"index.html": "8a9cb45b7028711f92227be6bcc120cb",
-"/": "8a9cb45b7028711f92227be6bcc120cb",
-"main.dart.js": "cd036aeada22ad840d1f9a3fba559278",
+"index.html": "6fb0b3978151f24f683b2514e1b26ccb",
+"/": "6fb0b3978151f24f683b2514e1b26ccb",
+"main.dart.js": "1ee4166b6c01a64a9948a9f547201949",
 "manifest.json": "e8add07f0fa638eadb3c306d597d1dff",
 "ogimage.jpg": "4b7816a1b7246ad5a4cdb66c9251ef11",
 "version.json": "2aa3c57100564158890f8d71e4f523a9"};

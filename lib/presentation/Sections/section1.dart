@@ -39,7 +39,7 @@ class Section1 extends StatelessWidget {
             children: [
               // Display an image from a network URL
               Image.asset(
-                Assetsimages.them,
+                Assetsimages.then1,
                 fit: BoxFit.fill,
               ),
 
