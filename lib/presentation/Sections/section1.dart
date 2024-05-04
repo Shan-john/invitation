@@ -47,7 +47,7 @@ class Section1 extends StatelessWidget {
               Positioned(
                 bottom: 0,
                 left: 0,
-                right: 0,
+                right: 0, 
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
