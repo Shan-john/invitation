@@ -36,13 +36,16 @@ class Section4 extends StatelessWidget {
           ),
           Gap(50),
           // Display EventTiles with event information and images
-          EventTile("is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. I ",
+          EventTile(betrothal,
               "https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"),
           Gap(30),
-          EventTile(" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. I ",
+          EventTile(marriage,
               "https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"),
         ],
       ),
     );
   }
 }
+
+const String betrothal ="Betrothal: Moday ,24th June 2024, Morning 11.30  @CSI Heritage, Guruvayur Road,Kunnamkulam, Thrissur (Dist)";
+const String marriage = "Marriage: Thursday, 27th June 2024, Morning 11:00 @ Bethel Marthoma Syrian Church, Ranni-Perunad, Pathanamthitta (Dist)";

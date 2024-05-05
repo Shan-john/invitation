@@ -1,10 +1,6 @@
 import 'dart:isolate';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:gap/gap.dart';
 import 'package:invitation/presentation/core.dart';
-import 'package:invitation/presentation/widgets/button.dart';
 import 'package:invitation/routes.dart';
 import 'package:video_player/video_player.dart';
 import '../widgets/circlecontainer.dart';
@@ -30,8 +26,7 @@ class Section1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isvideobuttompressed = false;
-    return Container(
+    return SizedBox(
       child: Column(
         children: [
           Stack(
@@ -47,7 +42,7 @@ class Section1 extends StatelessWidget {
               Positioned(
                 bottom: 0,
                 left: 0,
-                right: 0, 
+                right: 0,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -64,7 +59,7 @@ class Section1 extends StatelessWidget {
               ),
             ],
           ),
-          Container(
+          SizedBox(
               height: 100,
               width: 100,
               child: Image.network(
@@ -91,7 +86,9 @@ class _ButterFlyAssetVideoState extends State<_ButterFlyAssetVideo> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset(AssetsVideo.chekankannalmp4,);
+    _controller = VideoPlayerController.asset(
+      AssetsVideo.chekankannalmp4,
+    );
 
     _controller.addListener(() {
       setState(() {});
@@ -117,7 +114,10 @@ class _ButterFlyAssetVideoState extends State<_ButterFlyAssetVideo> {
             onPressed: () {
               Routes.instance.pop(context);
             },
-            icon: Icon(Icons.arrow_back_ios_new_rounded,color: Colors.white,)),
+            icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: Colors.white,
+            )),
       ),
       body: Column(
         children: <Widget>[
@@ -129,9 +129,10 @@ class _ButterFlyAssetVideoState extends State<_ButterFlyAssetVideo> {
                 AspectRatio(
                   aspectRatio: _controller.value.aspectRatio,
                   child: VideoPlayer(_controller),
-                  
                 ),
-                _ControlsOverlay(controller: _controller,)
+                _ControlsOverlay(
+                  controller: _controller,
+                )
               ],
             ),
           ),
@@ -142,10 +143,9 @@ class _ButterFlyAssetVideoState extends State<_ButterFlyAssetVideo> {
   }
 }
 
-
 class _ControlsOverlay extends StatelessWidget {
   const _ControlsOverlay({required this.controller});
-
+               
   // static const List<Duration> _exampleCaptionOffsets = <Duration>[
   //   Duration(seconds: -10),
   //   Duration(seconds: -3),
@@ -167,7 +167,7 @@ class _ControlsOverlay extends StatelessWidget {
   //   5.0,
   //   10.0,
   // ];
-
+       
   final VideoPlayerController controller;
 
   @override
@@ -199,8 +199,7 @@ class _ControlsOverlay extends StatelessWidget {
         // Align(
         //   alignment: Alignment.topLeft,
         //   child: PopupMenuButton<Duration>(
-        //     initialValue: controller.value.captionOffset,
-        //     tooltip: 'Caption Offset',
+        //     initi
         //     onSelected: (Duration delay) {
         //       controller.setCaptionOffset(delay);
         //     },
@@ -258,3 +257,4 @@ class _ControlsOverlay extends StatelessWidget {
     );
   }
 }
+
