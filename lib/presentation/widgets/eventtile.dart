@@ -47,6 +47,7 @@ class EventTile extends StatelessWidget {
       children: [
         // Display the image associated with the event
         Image.network(
+          fit: BoxFit.cover,
           imageUrl,
           height: 180,
           width: 160,
