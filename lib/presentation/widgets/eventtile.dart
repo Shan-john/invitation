@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 // -------------------------------
 // |       EventTile Widget      |
 // -------------------------------
@@ -43,26 +44,30 @@ class EventTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        // Display the image associated with the event
-        Image.network(
-          fit: BoxFit.cover,
-          imageUrl,
-          height: 180,
-          width: 160,
-        ),
-        
-        // Display the title of the event
-        SizedBox(
-          width: 240,
-          height: 200,
-          child: Text(
-            title,
-            style: TextStyle(color: Colors.white,fontSize: 16),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Display the image associated with the event
+          Image.network(
+            fit: BoxFit.cover,
+            imageUrl,
+            height: 180,
+            width: 160,
           ),
-        ),
-      ],
+          Gap(14),
+          // Display the title of the event
+          SizedBox(
+            width: 240,
+            height: 150,
+            child: Text(
+              title,
+              style: TextStyle(color: Colors.white,fontSize: 16),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
