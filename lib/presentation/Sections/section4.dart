@@ -37,10 +37,10 @@ class Section4 extends StatelessWidget {
           Gap(50),
           // Display EventTiles with event information and images
           EventTile(betrothal,
-              "https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"),
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU"),
           Gap(30),
           EventTile(marriage,
-              "https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"),
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s"),
         ],
       ),
     );

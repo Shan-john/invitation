@@ -70029,8 +70029,8 @@ A.Hy.prototype={
 L(a){var s=null
 return A.dx(s,A.kf(A.a([A.dP("Discover\nOur Wedding Venues",A.dr(s,s,B.i,s,s,s,s,s,s,s,s,30,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),A.dP("Join Us\nin Celebrating Love and Togetherness",A.dr(s,s,B.ds,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),new A.lC("assets/map.png",350,B.cj,s),A.dP("Click on the link below\nExplore the location.",A.dr(s,s,B.ds,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),A.hg(20),A.dP("Be there",A.dr(s,s,B.i,s,s,s,s,s,"Pacifico",s,s,50,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),A.hg(20),new A.xU("Home","https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA",s),A.hg(20),new A.xU("Church","https://maps.app.goo.gl/29J6VtXBtKWXYA1S9",s)],t.E),B.am,B.aY),s,s,s,s,s,s,s)}}
 A.Hz.prototype={
-L(a){var s=null,r="https://i.pinimg.com/564x/99/b0/24/99b024a8699ff4028151c7f6cb313398.jpg"
-return A.dx(s,A.kf(A.a([A.dP("Upcoming\nevents",A.dr(s,s,B.i,s,s,s,s,s,s,s,s,40,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),A.hg(50),new A.ue("Betrothal: Moday ,24th June 2024, Morning 11.30  @CSI Heritage, Guruvayur Road,Kunnamkulam, Thrissur (Dist)",r,s),A.hg(30),new A.ue("Marriage: Thursday, 27th June 2024, Morning 11:00 @ Bethel Marthoma Syrian Church, Ranni-Perunad, Pathanamthitta (Dist)",r,s)],t.E),B.am,B.py),s,s,s,s,s,s,s)}}
+L(a){var s=null
+return A.dx(s,A.kf(A.a([A.dP("Upcoming\nevents",A.dr(s,s,B.i,s,s,s,s,s,s,s,s,40,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aD),A.hg(50),new A.ue("Betrothal: Moday ,24th June 2024, Morning 11.30  @CSI Heritage, Guruvayur Road,Kunnamkulam, Thrissur (Dist)","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU",s),A.hg(30),new A.ue("Marriage: Thursday, 27th June 2024, Morning 11:00 @ Bethel Marthoma Syrian Church, Ranni-Perunad, Pathanamthitta (Dist)","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s",s)],t.E),B.am,B.py),s,s,s,s,s,s,s)}}
 A.HA.prototype={
 L(a){var s=null
 return A.dx(s,A.kf(A.a([A.dx(B.bJ,A.aj_("assets/image/protraitInvitationcard.jpg",s),s,s,s,s,s,s,s),A.dx(s,s,B.yN,s,s,2,new A.aT(0,50,0,0),s,s),new A.DT(s)],t.E),B.am,B.aY),s,s,s,s,s,s,s)}}
