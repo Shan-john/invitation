@@ -24,7 +24,9 @@ class _GalleryState extends State<Gallery> {
   @override
   void initState() {
     fetchdata();
-
+setState(() {
+  
+});
     super.initState();
   }
 

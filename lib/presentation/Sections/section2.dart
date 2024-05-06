@@ -17,11 +17,12 @@ import 'package:invitation/presentation/widgets/imagesection.dart';
 /// Section2 section2 = Section2();
 /// ```
 class Section2 extends StatefulWidget {
+  
   /// Constructor for the `Section2` class.
   ///
   /// The [key] parameter is used to provide a key for the widget.
   const Section2({
-    super.key,
+    super.key,  
   });
 
   @override
@@ -32,21 +33,22 @@ class _Section2State extends State<Section2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:   Column(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Text content for the section
-       
 
-            Gap(50),
+          Gap(50),
           Padding(
             padding: EdgeInsets.only(left: 8.0),
-            child: Column( 
- 
+            child: Column(
               children: [
                 Text(
                   "Save the Date\nfor the Wedding\nCelebration!",
-                  style: TextStyle(fontSize: 27, color: Colors.white,fontWeight: FontWeight.w700),
+                  style: TextStyle(
+                      fontSize: 27,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700),
                   textAlign: TextAlign.center,
                 ),
                 Text(
@@ -72,7 +74,7 @@ class _Section2State extends State<Section2> {
           imagesection(
             alignmentGeometry: Alignment.centerRight,
             height: 350,
-            image:  Assetsimages.three,
+            image: Assetsimages.three,
           ),
           imagesection(
             alignmentGeometry: Alignment.centerLeft,
@@ -80,44 +82,45 @@ class _Section2State extends State<Section2> {
             image: Assetsimages.four,
           ),
           Padding(
-            padding: const EdgeInsets.only(left:18.0,top: 50),
+            padding: const EdgeInsets.only(left: 18.0, top: 50),
             child: Text(
-                  
-                "Gallery", 
-                style: TextStyle(fontSize: 45, color: Colors.white54,fontWeight: FontWeight.w700,letterSpacing: 2),
-                 
-              ),
+              "Gallery",
+              style: TextStyle(
+                  fontSize: 45,
+                  color: Colors.white54,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 2),
+            ),
           ),
           Gap(50),
-            CarouselDemo(),
+          CarouselDemo(   ),
           // Column(
           //   crossAxisAlignment: CrossAxisAlignment.start,
           //   children: [
-              // Gap(150),
-              // Center(
-              //   child: Text(
-                  
-              //   "Are you interested in \n knowing more  about the \n Bride and Groom", 
-              //   style: TextStyle(fontSize: 25, color: Colors.white54),
-              //   textAlign: TextAlign.center,
-              //               ),
-              // ),
+          // Gap(150),
+          // Center(
+          //   child: Text(
+
+          //   "Are you interested in \n knowing more  about the \n Bride and Groom",
+          //   style: TextStyle(fontSize: 25, color: Colors.white54),
+          //   textAlign: TextAlign.center,
+          //               ),
+          // ),
           //   Gap(50),
-           
+
           //  Center(
           //    child: Column(
-             
+
           //     crossAxisAlignment: CrossAxisAlignment.center,
           //      children: [
           //        PrimaryButton("Bride", 50 , () => null,150),
           //        Gap(50),
           //         PrimaryButton("Groom", 50 , () => null,150),
-                
+
           //      ],
           //    ),
           //  )
           // ],),
-          
         ],
       ),
     );
