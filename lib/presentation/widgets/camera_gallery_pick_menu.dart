@@ -36,29 +36,54 @@ class _mySelectionmenu extends State<Selectionmenu> {
   // Add the function to upload to Firebase or other actions
 
   /// The name of the selected file.
-  String selectedfile = "";
+  // String selectedfile = "";
 
-  /// The selected image in bytes.
-  Uint8List? selectedImageInByte;
+  // /// The selected image in bytes.
+  // Uint8List? selectedImageInByte;
 
-  /// Captures an image from the gallery using the `ImagePickerWeb` package.
-  Future<void> captureImageFromGallery() async {
-    var item = await ImagePickerWeb.getImageAsBytes();
+  // /// Captures an image from the gallery using the `ImagePickerWeb` package.
+  // Future<void> captureImageFromGallery() async {
+  //   var item = await ImagePickerWeb.getImageAsBytes();
 
-    if (item != null) {
+  //   if (item != null) {
+  //     setState(() {
+  //       selectedfile =
+  //           "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
+  //       selectedImageInByte = item;
+  //     });
+
+  //     // Replace 'firebasehelper' with the actual class that handles Firebase uploads
+  //     firebasehelper.instance.uploadFile(
+  //         selectedImageInByte: selectedImageInByte!,
+  //         selectedfile: selectedfile);
+  //   }
+  // }
+/// The list of selected files.
+List<String> selectedFiles = [];
+
+/// The list of selected images in bytes.
+List<Uint8List> selectedImagesInBytes = [];
+
+/// Captures images from the gallery using the `ImagePickerWeb` package.
+Future<void> captureImagesFromGallery() async {
+  List<Uint8List>? items = await ImagePickerWeb.getMultiImagesAsBytes();
+
+  if (items != null && items.isNotEmpty) {
+    for(int index =0 ;index<items.length;index++) {
+      var temp = items[index];
       setState(() {
-        selectedfile =
-            "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
-        selectedImageInByte = item;
+        String fileName = "${DateTime.now().millisecondsSinceEpoch + Random().nextInt(100000)}.jpeg";
+        selectedFiles.add(fileName);
+        selectedImagesInBytes.add(temp);
       });
 
       // Replace 'firebasehelper' with the actual class that handles Firebase uploads
-      firebasehelper.instance.uploadFile(
-          selectedImageInByte: selectedImageInByte!,
-          selectedfile: selectedfile);
+       firebasehelper.instance.uploadFile(
+          selectedImageInByte: selectedImagesInBytes[index],
+          selectedfile: selectedFiles[index]);
     }
   }
-
+}
   @override
   Widget build(BuildContext context) {
     return Dialog(
@@ -72,9 +97,9 @@ class _mySelectionmenu extends State<Selectionmenu> {
           children: [
             TextButtonforcameraGallery(
               icon: Icons.camera,
-              label: "Upload image",
+              label: "Upload images",
               ontap: () {
-                captureImageFromGallery();
+                captureImagesFromGallery();
               },
             ),
             TextButtonforcameraGallery(
