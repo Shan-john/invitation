@@ -58,19 +58,19 @@ class Section3 extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          Gap(20),
-          VenueLink(
-              "Groom Residence", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
+          // Gap(20),
+          // VenueLink(
+          //     "Groom Residence", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
 
-          Gap(20),
+          // Gap(20),
 
-          VenueLink(
-              "Bride Residence ", "https://maps.app.goo.gl/hrfahdXeTtbCeRwVA"),
-          Gap(20),
-          VenueLink(
-              "Betrothal At", "https://maps.app.goo.gl/YKsYDJwqX44kKozx6"),
-          Gap(20),
-          VenueLink("Wedding At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+          // VenueLink(
+          //     "Bride Residence ", "https://maps.app.goo.gl/hrfahdXeTtbCeRwVA"),
+          // Gap(20),
+          // VenueLink(
+          //     "Betrothal At", "https://maps.app.goo.gl/YKsYDJwqX44kKozx6"),
+          // Gap(20),
+          // VenueLink("Wedding At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
          
         ],
       ),

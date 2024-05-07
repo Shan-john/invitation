@@ -29,19 +29,20 @@ class Section4 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           // Text content for the section
-          Text(
-            "Upcoming\nevents",
-            style: TextStyle(fontSize: 40, color: Colors.white),
-            textAlign: TextAlign.center,
-          ),
-          Gap(50),
+          // Text(
+          //   "Upcoming\nevents",
+          //   style: TextStyle(fontSize: 40, color: Colors.white),
+          //   textAlign: TextAlign.center,
+          // ),
+           Gap(50),
+          EventTile(marriage,
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s","https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+
+          Gap(30),
           // Display EventTiles with event information and images
           EventTile(betrothal,
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU"),
-          Gap(30),
-          EventTile(marriage,
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s"),
-        ],
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU","https://maps.app.goo.gl/YKsYDJwqX44kKozx6"),
+                 ],
       ),
     );
   }

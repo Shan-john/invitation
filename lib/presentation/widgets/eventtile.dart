@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'dart:html' as html;
 // -------------------------------
 // |       EventTile Widget      |
 // -------------------------------
@@ -35,38 +35,53 @@ class EventTile extends StatelessWidget {
 
   /// The URL of the image associated with the event.
   final String imageUrl;
+  final String url;
 
   /// Constructor for the `EventTile` class.
   ///
   /// The [title] parameter is the title of the event.
   /// The [imageUrl] parameter is the URL of the image associated with the event.
-  EventTile(this.title, this.imageUrl);
+  EventTile(this.title, this.imageUrl, this.url);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          // Display the image associated with the event
-          Image.network(
-            fit: BoxFit.cover,
-            imageUrl,
-            height: 180,
-            width: 160,
-          ),
-          Gap(14),
-          // Display the title of the event
-          SizedBox(
-            width: 240,
-            height: 150,
-            child: Text(
-              title,
-              style: TextStyle(color: Colors.white,fontSize: 16),
+      child: InkWell(
+        onTap: (){
+          html.window.open(url, "");
+        },
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            // Display the image associated with the event
+            Container(
+              height: 180,
+                width: 160,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  
+                  fit: BoxFit.cover,image: NetworkImage( 
+                imageUrl,)),
+                  borderRadius: BorderRadius.all(Radius.circular(20))),
+              // child: Image.network(
+              //   fit: BoxFit.cover,
+              //   imageUrl,
+                
+              // ),
             ),
-          ),
-        ],
+            Gap(14),
+            // Display the title of the event
+            SizedBox(
+              width: 240,
+              height: 150,
+              child: Text(
+                title,
+                style: TextStyle(color: Colors.white, fontSize: 16),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
