@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:invitation/presentation/widgets/imagesection.dart';
 import 'package:invitation/presentation/widgets/venuelink.dart';
+
 /// **Section3 Class Documentation**
 ///
 /// The `Section3` class represents another section in the Flutter application.
@@ -58,12 +59,19 @@ class Section3 extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           Gap(20),
-          // Display VenueLinks for different locations
-          VenueLink("Home", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
+          VenueLink(
+              "Groom Residence", "https://maps.app.goo.gl/DSHkCzfTCc1dSWmcA"),
+
           Gap(20),
-          VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
-          // Gap(20),
-          // VenueLink("Church", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+
+          VenueLink(
+              "Bride Residence ", "https://maps.app.goo.gl/hrfahdXeTtbCeRwVA"),
+          Gap(20),
+          VenueLink(
+              "Betrothal At", "https://maps.app.goo.gl/YKsYDJwqX44kKozx6"),
+          Gap(20),
+          VenueLink("Wedding At", "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+         
         ],
       ),
     );
