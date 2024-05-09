@@ -69879,7 +69879,7 @@ case 5:return A.K(null,r)
 case 1:return A.J(p,r)}})
 return A.L($async$iB,r)},
 M(a){var s=null,r=A.l_(A.aix(B.Ai,!1,new A.a9a(a),"Take Photos"),65,65)
-return A.ak7(s,B.k,A.ajc(A.a([new A.Hy(s),A.j2(100),new A.x3(s),A.j2(200),new A.Hz(s),new A.HA(s),A.j2(200),new A.HB(s)],t.E),B.aP),r)}}
+return A.ak7(s,B.k,A.ajc(A.a([new A.Hy(s),A.j2(50),new A.x3(s),A.j2(200),new A.Hz(s),new A.HA(s),A.j2(200),new A.HB(s)],t.E),B.aP),r)}}
 A.a9a.prototype={
 $0(){A.anR(new A.a99(),this.a,t.z)},
 $S:0}

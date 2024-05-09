@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Section 1
           // Gap(150),
           Section1(),
-          Gap(100),
+          Gap(50),
           // Section 2
           Section2(
            
