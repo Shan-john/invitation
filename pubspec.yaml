@@ -83,6 +83,7 @@ flutter:
   assets:
     
     - assets\map.png
+    - assets\shoneandrinila.png
     - assets\savethedate.png
     - assets\image\landscapecard.jpg
     - assets\image\protraitInvitationcard.jpg

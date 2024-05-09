@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:invitation/presentation/Screen/mainScreen.dart';
 
- 
-
 /// Widget that determines the layout type based on the screen width.
 /// If the screen width is less than 600, it displays the mobile layout (MyHomePage),
 /// otherwise, it displays the desktop layout (desktopdisplay).
@@ -15,10 +13,17 @@ class Responsive_Layout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
+        if (constraints.maxWidth < 700) {
           return MyHomePage();
         } else {
-          return desktopdisplay();
+          return Container(
+              width: 500,
+              color: Colors.black,
+              alignment: Alignment.center,
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width / 3,
+              ),
+              child: MyHomePage());
         }
       },
     );

@@ -64,6 +64,12 @@ class Section1 extends StatelessWidget {
               width: 100,
               child: Image.network(
                   "https://www.cgr.gob.ve/assets/img/scroll-down.gif")),
+                  SizedBox(
+              height: 100,
+              //width: 100,
+              child: Image.network(
+                fit: BoxFit.cover,
+                  Assetsimages.shoneandrinla)),
           //         Gap(10),
           // PrimaryButton("Chekkan kannal video ->", 70, () {
           //   Routes.instance

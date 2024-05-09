@@ -38,10 +38,10 @@ class CircleContainer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           // Display the label inside the circle
-          Text(label),
+          Text(label, style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black54),),
           
           // Display the value inside the circle
-          Text(value),
+          Text(value, style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black,fontSize: 16),),
         ],
       ),
     );

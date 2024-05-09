@@ -32,6 +32,7 @@ import 'dart:html' as html;
 class EventTile extends StatelessWidget {
   /// The title of the event to be displayed.
   final String title;
+  final String label;
 
   /// The URL of the image associated with the event.
   final String imageUrl;
@@ -41,14 +42,14 @@ class EventTile extends StatelessWidget {
   ///
   /// The [title] parameter is the title of the event.
   /// The [imageUrl] parameter is the URL of the image associated with the event.
-  EventTile(this.title, this.imageUrl, this.url);
+  EventTile(this.title, this.imageUrl, this.url, this.label);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: InkWell(
-        onTap: (){
+        onTap: () {
           html.window.open(url, "");
         },
         child: Row(
@@ -57,28 +58,47 @@ class EventTile extends StatelessWidget {
             // Display the image associated with the event
             Container(
               height: 180,
-                width: 160,
+              width: 160,
               decoration: BoxDecoration(
-                image: DecorationImage(
-                  
-                  fit: BoxFit.cover,image: NetworkImage( 
-                imageUrl,)),
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage(
+                        imageUrl,
+                      )),
                   borderRadius: BorderRadius.all(Radius.circular(20))),
-              // child: Image.network(
-              //   fit: BoxFit.cover,
-              //   imageUrl,
-                
-              // ),
+              child: null,
             ),
             Gap(14),
             // Display the title of the event
             SizedBox(
-              width: 240,
+              width: 200,
               height: 150,
-              child: Text(
-                title,
-                style: TextStyle(color: Colors.white, fontSize: 16),
+              child: RichText(
+                textDirection: TextDirection.ltr,
+                text: TextSpan(
+                  style: DefaultTextStyle.of(context).style,
+                  children: [
+                    TextSpan(
+                      text: title,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18),
+                    ),
+                    TextSpan(
+                      text: label,
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                  ],
+                ),
               ),
+              // Text(
+              //   title,
+              //   style: TextStyle(color: Colors.white, fontSize: 16),
+              // ),
+
+              //   ],
+              // ),
             ),
           ],
         ),

@@ -12,7 +12,8 @@ class Assetsimages {
   static const String land2 = "assets/image/land2.jpg";
   static const String land3 = "assets/image/land3.jpg";
   static const String land4 = "assets/image/land4.jpg";
-    static const String then1 = "assets/image/them1.jpg";
+  static const String then1 = "assets/image/them1.jpg";
+  static const String shoneandrinla = "assets/shoneandrinila.png";
 }
 
 class AssetsVideo {

@@ -3,9 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "7f5cc0abc2d268b64e0aa9bd7d8d5b3c",
-"assets/AssetManifest.bin.json": "6dc43744e68403af814638765203df19",
-"assets/AssetManifest.json": "8a150ef26f39e45e486bdf0cbe9654b6",
+const RESOURCES = {"assets/AssetManifest.bin": "d1c533a594307566e6c42a22fd148238",
+"assets/AssetManifest.bin.json": "a409f0ca596113b0657b33bc248eba30",
+"assets/AssetManifest.json": "352704d068836c3a6154fb693907a1a8",
 "assets/assets/fonts/Pacifico-Regular.ttf": "85bb2d0ec4a0da159de42e89089ccc0b",
 "assets/assets/image/1.jpg": "b689facb88be1d406939f2039c4f3522",
 "assets/assets/image/2.jpg": "7b1faecde822aedc05d89d7a37957226",
@@ -23,6 +23,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "7f5cc0abc2d268b64e0aa9bd7d8d5b3c
 "assets/assets/image/them1.jpg": "e443b64a96b5fb8ec7a7f8b0afc19ea2",
 "assets/assets/map.png": "c9d5bc73aa2d57ea65e586d66718cfc7",
 "assets/assets/savethedate.png": "3d6eca75f1f9c23e9d0c90106133ab99",
+"assets/assets/shoneandrinila.png": "1997adb483bc517d89a0af677f032966",
 "assets/assets%255Cimage%255C1.jpg": "b689facb88be1d406939f2039c4f3522",
 "assets/assets%255Cimage%255C2.jpg": "7b1faecde822aedc05d89d7a37957226",
 "assets/assets%255Cimage%255C3.2.jpg": "ab231cc280e68cc4801dcb98538846df",
@@ -39,6 +40,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "7f5cc0abc2d268b64e0aa9bd7d8d5b3c
 "assets/assets%255Cimage%255Cthem1.jpg": "e443b64a96b5fb8ec7a7f8b0afc19ea2",
 "assets/assets%255Cmap.png": "c9d5bc73aa2d57ea65e586d66718cfc7",
 "assets/assets%255Csavethedate.png": "3d6eca75f1f9c23e9d0c90106133ab99",
+"assets/assets%255Cshoneandrinila.png": "1997adb483bc517d89a0af677f032966",
 "assets/FontManifest.json": "848dcd580c80116c346cbe0ab9f89c2f",
 "assets/fonts/MaterialIcons-Regular.otf": "997cc3cb15809e143460119a6a68fc8e",
 "assets/NOTICES": "3529b7d752940ca6a754ba8bd3c51365",
@@ -60,9 +62,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "7f5cc0abc2d268b64e0aa9bd7d8d5b3c
 "icons/Icon-maskable-192.png": "61b12f6aa3e9b96a6d7eb418e0003fba",
 "icons/Icon-maskable-512.png": "04fd1c48d1da6355ae1467f878e9c786",
 "icons/Icons-512.png": "04fd1c48d1da6355ae1467f878e9c786",
-"index.html": "f4be170bcf62c5330e4c26e0869b5de3",
-"/": "f4be170bcf62c5330e4c26e0869b5de3",
-"main.dart.js": "ae52f1ab95c548478ea6a0d711801421",
+"index.html": "3c572f77a513d6e93253190288547602",
+"/": "3c572f77a513d6e93253190288547602",
+"main.dart.js": "e29faa95be2b6f210c9f959a9251d9a8",
 "manifest.json": "e8add07f0fa638eadb3c306d597d1dff",
 "ogimage.jpg": "4b7816a1b7246ad5a4cdb66c9251ef11",
 "version.json": "2aa3c57100564158890f8d71e4f523a9"};

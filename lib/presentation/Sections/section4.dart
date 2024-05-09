@@ -35,18 +35,27 @@ class Section4 extends StatelessWidget {
           //   textAlign: TextAlign.center,
           // ),
            Gap(50),
-          EventTile(marriage,
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s","https://maps.app.goo.gl/29J6VtXBtKWXYA1S9"),
+          EventTile(
+            "Marriage:",
+            
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUljDcJ3RLXAX3itOUixQR3d-TcH2-n8TN22MByFHytQ&s",
+              "https://maps.app.goo.gl/29J6VtXBtKWXYA1S9",
+            marriage,
+),
 
           Gap(30),
           // Display EventTiles with event information and images
-          EventTile(betrothal,
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU","https://maps.app.goo.gl/YKsYDJwqX44kKozx6"),
+          EventTile(
+            "Betrothal:",
+                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NFlOTp-9htjvu7E5PpgzHXthSl8BU0ktXofVDBoAOVGUTt5DMU8ddYVfDmrVvooHSIk&usqp=CAU",
+                 "https://maps.app.goo.gl/YKsYDJwqX44kKozx6",
+            betrothal,
+        ),
                  ],
       ),
     );
   }
 }
 
-const String betrothal ="Betrothal: Moday ,24th June 2024, Morning 11.30  @CSI Heritage, Guruvayur Road,Kunnamkulam, Thrissur (Dist)";
-const String marriage = "Marriage: Thursday, 27th June 2024, Morning 11:00 @ Bethel Marthoma Syrian Church, Ranni-Perunad, Pathanamthitta (Dist)";
+const String betrothal =" Moday ,24th June 2024, Morning 11.30  @CSI Heritage, Guruvayur Road,Kunnamkulam, Thrissur (Dist)";
+const String marriage = " Thursday, 27th June 2024, Morning 11:00 @ Bethel Marthoma Syrian Church, Ranni-Perunad, Pathanamthitta (Dist)";

@@ -17,12 +17,11 @@ import 'package:invitation/presentation/widgets/imagesection.dart';
 /// Section2 section2 = Section2();
 /// ```
 class Section2 extends StatefulWidget {
-  
   /// Constructor for the `Section2` class.
   ///
   /// The [key] parameter is used to provide a key for the widget.
   const Section2({
-    super.key,  
+    super.key,
   });
 
   @override
@@ -44,7 +43,7 @@ class _Section2State extends State<Section2> {
             child: Column(
               children: [
                 Text(
-                  "Save the Date\nfor the Wedding\nCelebration!",
+                  "Join us in\ncelebrating our\n new chapter!",
                   style: TextStyle(
                       fontSize: 27,
                       color: Colors.white,
@@ -52,7 +51,7 @@ class _Section2State extends State<Section2> {
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  "Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 27/06/2024.\nJoin us in celebrating a new chapter!",
+                  "Save the date\nShone John and Rinila Mary Jobson's\nspecial day on 27/06/2024.",
                   style: TextStyle(fontSize: 20, color: Colors.white54),
                   textAlign: TextAlign.center,
                 ),
@@ -93,7 +92,7 @@ class _Section2State extends State<Section2> {
             ),
           ),
           Gap(50),
-          CarouselDemo(   ),
+          CarouselDemo(),
           // Column(
           //   crossAxisAlignment: CrossAxisAlignment.start,
           //   children: [
