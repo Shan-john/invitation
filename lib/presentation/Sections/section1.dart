@@ -67,7 +67,7 @@ class Section1 extends StatelessWidget {
                   SizedBox(
               height: 150,
               width: 400,
-              child: Image.network(
+              child: Image.asset(
                 fit: BoxFit.cover,
                   Assetsimages.shoneandrinla)),
           //         Gap(10),
