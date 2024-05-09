@@ -69943,7 +69943,7 @@ $1(a){return A.ahN(null,A.aet(this.a,null))},
 $S:447}
 A.Hy.prototype={
 M(a){var s=null,r=t.E
-return A.l_(A.kg(A.a([A.a3z(B.N,A.a([A.aiS("assets/image/them1.jpg",B.wH),A.aeZ(0,A.Hh(A.a([new A.os("Date","27",s),new A.os("Month","June",s),new A.os("Year","2024",s)],r),B.am,B.hs,B.bU),s,s,0,0,s,s)],r),B.ib),A.l_(A.aet("https://www.cgr.gob.ve/assets/img/scroll-down.gif",s),100,100),A.l_(A.aet("assets/shoneandrinila.png",B.dq),100,s)],r),B.am,B.aY),s,s)}}
+return A.l_(A.kg(A.a([A.a3z(B.N,A.a([A.aiS("assets/image/them1.jpg",B.wH),A.aeZ(0,A.Hh(A.a([new A.os("Date","27",s),new A.os("Month","June",s),new A.os("Year","2024",s)],r),B.am,B.hs,B.bU),s,s,0,0,s,s)],r),B.ib),A.l_(A.aet("https://www.cgr.gob.ve/assets/img/scroll-down.gif",s),100,100),A.l_(A.aet("assets/shoneandrinila.png",B.dq),150,400)],r),B.am,B.aY),s,s)}}
 A.x3.prototype={
 ah(){return new A.Oh(B.j)}}
 A.Oh.prototype={
