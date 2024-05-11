@@ -72,7 +72,7 @@ class EventTile extends StatelessWidget {
             // Display the title of the event
             SizedBox(
               width: 200,
-              height: 150,
+              height: 190,
               child: RichText(
                 textDirection: TextDirection.ltr,
                 text: TextSpan(
@@ -88,6 +88,10 @@ class EventTile extends StatelessWidget {
                     TextSpan(
                       text: label,
                       style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                     TextSpan(
+                      text: "\nClick me to explore the location ",
+                      style: TextStyle(color: Color.fromARGB(255, 0, 90, 163), fontSize: 18),
                     ),
                   ],
                 ),
