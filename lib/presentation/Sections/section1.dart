@@ -73,6 +73,16 @@ class Section1 extends StatelessWidget {
                 fit: BoxFit.cover,
                   Assetsimages.shoneandrinla)),
                   Gap(50) ,
+                   Text(
+                  "Unlock the Magic: \nExplore Our AR Invitation Filter Now!",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color:Colors.white54,
+                    ),
+                  textAlign: TextAlign.center,
+                ),
+                 
+
                   VenueLink(
               "AR invitation filter", "https://www.instagram.com/ar/1440004156660122/?ch=NzcyODEwNzBkMWU5ODJiOTZkMjE4YjE2Y2NhZmU0MGE%3D"),
                   Gap(10),
