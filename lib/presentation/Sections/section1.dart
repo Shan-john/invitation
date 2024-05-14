@@ -83,7 +83,7 @@ class Section1 extends StatelessWidget {
                 ),
                  
 Gap(10),
-                  VenueLink(
+                  VenueLink( 
               "AR invitation filter", "https://www.instagram.com/ar/1440004156660122"),
                   Gap(10),
           // PrimaryButton("Chekkan kannal video ->", 70, () {
