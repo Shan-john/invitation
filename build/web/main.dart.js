@@ -70057,7 +70057,7 @@ $1(a){return A.ahX(null,A.aj1(this.a))},
 $S:447}
 A.Hz.prototype={
 L(a){var s=null,r=t.E
-return A.l_(A.kg(A.a([A.a3C(B.M,A.a([A.aeC("assets/image/them1.jpg",B.wI),A.af7(0,A.Hi(A.a([new A.ot("Date","27",s),new A.ot("Month","June",s),new A.ot("Year","2024",s)],r),B.am,B.ht,B.bV),s,s,0,0,s,s)],r),B.ic),A.l_(A.aj1("https://www.cgr.gob.ve/assets/img/scroll-down.gif"),100,100),A.l_(A.aeC("assets/shoneandrinila.png",B.dr),150,400),A.fA(50),A.eI("Unlock the Magic: \nExplore Our AR Invitation Filter Now!",A.cN(s,s,B.cy,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aK),A.fA(10),new A.IZ("AR invitation filter","https://www.instagram.com/ar/1440004156660122/?ch=NzcyODEwNzBkMWU5ODJiOTZkMjE4YjE2Y2NhZmU0MGE%3D",s),A.fA(10)],r),B.am,B.aZ),s,s)}}
+return A.l_(A.kg(A.a([A.a3C(B.M,A.a([A.aeC("assets/image/them1.jpg",B.wI),A.af7(0,A.Hi(A.a([new A.ot("Date","27",s),new A.ot("Month","June",s),new A.ot("Year","2024",s)],r),B.am,B.ht,B.bV),s,s,0,0,s,s)],r),B.ic),A.l_(A.aj1("https://www.cgr.gob.ve/assets/img/scroll-down.gif"),100,100),A.l_(A.aeC("assets/shoneandrinila.png",B.dr),150,400),A.fA(50),A.eI("Unlock the Magic: \nExplore Our AR Invitation Filter Now!",A.cN(s,s,B.cy,s,s,s,s,s,s,s,s,20,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),B.aK),A.fA(10),new A.IZ("AR invitation filter","https://www.instagram.com/ar/1440004156660122",s),A.fA(10)],r),B.am,B.aZ),s,s)}}
 A.x3.prototype={
 ah(){return new A.Ok(B.k)}}
 A.Ok.prototype={
