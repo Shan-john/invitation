@@ -66,26 +66,25 @@ class Section1 extends StatelessWidget {
               width: 100,
               child: Image.network(
                   "https://www.cgr.gob.ve/assets/img/scroll-down.gif")),
-                  SizedBox(
+          SizedBox(
               height: 150,
               width: 400,
-              child: Image.asset(
-                fit: BoxFit.cover,
-                  Assetsimages.shoneandrinla)),
-                  Gap(50) ,
-                   Text(
-                  "Unlock the Magic: \nExplore Our AR Invitation Filter Now!",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color:Colors.white54,
-                    ),
-                  textAlign: TextAlign.center,
-                ),
-                 
-Gap(10),
-                  VenueLink( 
-              "AR invitation filter", "https://www.instagram.com/ar/1440004156660122"),
-                  Gap(10),
+              child:
+                  Image.asset(fit: BoxFit.cover, Assetsimages.shoneandrinla)),
+          const Gap(50),
+          const Text(
+            "Unlock the Magic: \nExplore Our AR Invitation Filter Now!",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white54,
+            ),
+            textAlign: TextAlign.center,
+          ),
+
+          Gap(10),
+          VenueLink("AR invitation filter",
+              "https://www.instagram.com/ar/1440004156660122"),
+          Gap(10),
           // PrimaryButton("Chekkan kannal video ->", 70, () {
           //   Routes.instance
           //       .push(widget: _ButterFlyAssetVideo(), context: context);
@@ -166,7 +165,7 @@ class _ButterFlyAssetVideoState extends State<_ButterFlyAssetVideo> {
 
 class _ControlsOverlay extends StatelessWidget {
   const _ControlsOverlay({required this.controller});
-               
+
   // static const List<Duration> _exampleCaptionOffsets = <Duration>[
   //   Duration(seconds: -10),
   //   Duration(seconds: -3),
@@ -188,7 +187,7 @@ class _ControlsOverlay extends StatelessWidget {
   //   5.0,
   //   10.0,
   // ];
-       
+
   final VideoPlayerController controller;
 
   @override
@@ -278,4 +277,3 @@ class _ControlsOverlay extends StatelessWidget {
     );
   }
 }
-
