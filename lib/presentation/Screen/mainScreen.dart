@@ -22,6 +22,8 @@ import 'package:invitation/service/firebasehelper.dart';
 /// MyHomePage homePage = MyHomePage();
 /// ```
 class MyHomePage extends StatefulWidget {
+  final double size;
+  MyHomePage({required this.size});
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
@@ -82,12 +84,10 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           // Section 1
           // Gap(150),
-          Section1(),
+          Section1(size: widget.size,),
           Gap(50),
           // Section 2
-          Section2(
-           
-          ),
+          Section2(),
           Gap(200),
           // Section 3
           Section3(),

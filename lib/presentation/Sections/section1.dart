@@ -19,11 +19,13 @@ import '../widgets/circlecontainer.dart';
 /// Section1 section1 = Section1();
 /// ```
 class Section1 extends StatelessWidget {
+  final double size;
+
   /// Constructor for the `Section1` class.
   ///
   /// The [key] parameter is used to provide a key for the widget.
   const Section1({
-    super.key,
+    super.key, required this.size,
   });
 
   @override
@@ -49,13 +51,13 @@ class Section1 extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // Display circle container with date
-                    CircleContainer("Date", "27"),
+                    CircleContainer("Date", "27",size),
 
                     // Display circle container with month
-                    CircleContainer("Month", "June"),
+                    CircleContainer("Month", "June",size),
 
                     // Display circle container with year
-                    CircleContainer("Year", "2024"),
+                    CircleContainer("Year", "2024",size),
                   ],
                 ),
               ),

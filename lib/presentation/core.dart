@@ -14,6 +14,7 @@ class Assetsimages {
   static const String land4 = "assets/image/land4.jpg";
   static const String then1 = "assets/image/them1.jpg";
   static const String shoneandrinla = "assets/shoneandrinila.png";
+  static const String land5 = "assets/image/land5.jpg";
 }
 
 class AssetsVideo {

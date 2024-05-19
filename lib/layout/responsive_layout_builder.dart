@@ -14,16 +14,16 @@ class Responsive_Layout extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth < 700) {
-          return MyHomePage();
+          return MyHomePage(size: 100,);
         } else {
           return Container(
-              width: 500,
+              width:500,
               color: Colors.black,
               alignment: Alignment.center,
-              padding: EdgeInsets.symmetric(
-                horizontal: MediaQuery.of(context).size.width / 3,
-              ),
-              child: MyHomePage());
+              padding: EdgeInsets.symmetric( 
+                horizontal: MediaQuery.of(context).size.width / 4,
+              ), 
+              child: MyHomePage(size: MediaQuery.of(context).size.width / 15,));
         }
       },
     );
